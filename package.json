@@ -1,7 +1,7 @@
 {
-  "name": "r-socs-playground",
+  "name": "irene-design",
   "version": "0.0.1",
-  "description": "playground for r-socs-core based models",
+  "description": "website of Irene Lidia Wang's design",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Fuhang Wang",
-  "license": "MIT",
+  "license": "",
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
