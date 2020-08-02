@@ -2,41 +2,33 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
+    justify-content: center;
 }
 
 .imageArea1 {
-    flex-grow: 1;
-    width: 40%;
-    min-width: 320px;
-
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .imageArea2 {
-    flex-grow: 1;
-    width: 60%;
-    min-width: 480px;
-
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .imageFrame1 {
-    padding: 48px;
+    padding: 2vw;
 }
 
 .imageFrame2 {
-    padding: 48px;
+    padding: 2vw;
 }
 
 .image1 {
-    width: 100%;
+    width: 320px;
 }
 
 .image2 {
-    width: 100%;
+    width: 480px;
 }

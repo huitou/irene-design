@@ -1,9 +1,18 @@
+.view {
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    max-width: 1024px;
+}
+
 .header {
-    height: 100px;
+    min-height: 100px;
 }
 
 .footer {
-    height: 120px;
+    min-height: 120px;
 }
 
 .body {

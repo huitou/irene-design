@@ -1,7 +1,7 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { func } from 'prop-types';
 
-import { header, body, footer } from './component.css';
+import { view, page, header, body, footer } from './component.css';
 
 class PageLayout extends Component {
 
@@ -9,11 +9,13 @@ class PageLayout extends Component {
     const { headerRender, bodyRender, footerRender } = this.props;
 
     return (
-      <Fragment>
-        <div className={header}>{headerRender()}</div>
-        <div className={body}>{bodyRender()}</div>
-        <div className={footer}>{footerRender()}</div>
-      </Fragment>
+      <div className={view}>
+        <div className={page}>
+          <div className={header}>{headerRender()}</div>
+          <div className={body}>{bodyRender()}</div>
+          <div className={footer}>{footerRender()}</div>
+        </div>
+      </div>
     );
   }
 }
