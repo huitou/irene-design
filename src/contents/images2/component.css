@@ -1,0 +1,42 @@
+.imagesArea {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.imageArea1 {
+    flex-grow: 1;
+    width: 60%;
+    min-width: 480px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imageArea2 {
+    flex-grow: 1;
+    width: 40%;
+    min-width: 320px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imageFrame1 {
+    padding: 48px;
+}
+
+.imageFrame2 {
+    padding: 48px;
+}
+
+.image1 {
+    width: 100%;
+}
+
+.image2 {
+    width: 100%;
+}
