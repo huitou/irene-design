@@ -1,0 +1,27 @@
+.headerArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nameFrame {
+    padding: 48px;
+}
+
+.name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #4F4E4E;
+}
+
+.linksFrame {
+    padding: 48px;
+}
+
+.links {
+    padding: 0px;
+}
+
+.link {
+    padding: 0 10px;
+}

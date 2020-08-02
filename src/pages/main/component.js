@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 
 import PageLayout from '../../layout/page';
 import MainBodyLayout from '../../layout/bodys/main';
+import Header from '../../contents/header';
 import Title from '../../contents/title';
 import Images1 from '../../contents/images1';
 import Images2 from '../../contents/images2';
+import Footer from '../../contents/footer';
 
 const bodyRender = () => (
   <MainBodyLayout
@@ -18,9 +20,9 @@ class MainPage extends Component {
   render() {
     return (
       <PageLayout
-        headerRender={() => (<div>Header</div>)}
+        headerRender={() => (<Header />)}
         bodyRender={bodyRender}
-        footerRender={() => (<div>Footer</div>)}
+        footerRender={() => (<Footer />)}
       />
     );
   }
