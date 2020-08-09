@@ -40,6 +40,7 @@ module.exports = {
     ]
   },
   plugins: [htmlPlugin],
+  devtool: "eval-source-map",
   devServer: {
     contentBase: path.join(__dirname, 'public')
   }

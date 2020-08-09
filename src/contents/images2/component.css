@@ -5,30 +5,80 @@
     justify-content: center;
 }
 
-.imageArea1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+@media only screen and (min-width: 769px) {
+    .imageArea1 {
+        flex-grow: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .imageArea2 {
+        flex-grow: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .imageFrame1 {
+        padding: 0 0 0 5vw;
+        max-width: 400px;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-end;
+    }
+
+    .imageFrame2 {
+        padding: 0 5vw 0 0;
+        max-width: 400px;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
 }
 
-.imageArea2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
+@media only screen and (max-width: 768px) {
+    .imageArea1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-.imageFrame1 {
-    padding: 2vw;
-}
+    .imageArea2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-.imageFrame2 {
-    padding: 2vw;
+    .imageFrame1 {
+        width: 80vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imageFrame2 {
+        width: 80vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .image1 {
-    width: 480px;
+    width: 100%;
 }
 
 .image2 {
-    width: 320px;
+    width: 100%;
 }
