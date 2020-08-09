@@ -1,0 +1,18 @@
+.titleArea {
+    display: flex;
+    align-items: center;
+}
+
+.titleFrame {
+    padding: 0 5vw;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #4F4E4E;
+}
+
+.titleBold {
+    font-weight: bold;
+}

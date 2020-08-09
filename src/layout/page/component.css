@@ -1,0 +1,20 @@
+.view {
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    max-width: 1024px;
+}
+
+.header {
+    min-height: 100px;
+}
+
+.footer {
+    min-height: 120px;
+}
+
+.body {
+    padding: 0px;
+}

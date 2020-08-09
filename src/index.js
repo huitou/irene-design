@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const Index = () => {
-  return <div>hello r-socs-playground!</div>;
-};
+import MainPage from './pages/main';
 
-ReactDOM.render(<Index />, document.getElementById("index"));
+ReactDOM.render(<MainPage />, document.getElementById("index"));

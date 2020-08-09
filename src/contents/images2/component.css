@@ -1,0 +1,86 @@
+.imagesArea {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 769px) {
+    .imageArea1 {
+        flex-grow: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .imageArea2 {
+        flex-grow: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .imageFrame1 {
+        padding: 0 0 0 5vw;
+        width: 40vw;
+        max-width: 400px;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-end;
+    }
+
+    .imageFrame2 {
+        padding: 0 5vw 0 0;
+        width: 40vw;
+        max-width: 400px;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .imageArea1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imageArea2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imageFrame1 {
+        width: 80vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imageFrame2 {
+        width: 80vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.image1 {
+    width: 100%;
+}
+
+.image2 {
+    width: 100%;
+}
