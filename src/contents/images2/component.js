@@ -16,20 +16,20 @@ class Images2 extends Component {
       <div className={imagesArea}>
         <div className={imageArea1}>
           <div className={imageFrame1}>
-            <img
+            {/* <img
               className={image1}
               src="/images/image-2.1.png"
               alt="Music Stream Platform"
-            />
+            /> */}
           </div>
         </div>
         <div className={imageArea2}>
         <div className={imageFrame2}>
-            <img
+            {/* <img
               className={image2}
               src="/images/image-2.2.png"
               alt="eCommerce Website"
-            />
+            /> */}
           </div>
         </div>
       </div>
