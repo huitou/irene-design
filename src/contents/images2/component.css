@@ -24,6 +24,7 @@
 
     .imageFrame1 {
         padding: 0 0 0 5vw;
+        width: 40vw;
         max-width: 400px;
         flex-grow: 1;
         flex-shrink: 1;
@@ -35,6 +36,7 @@
 
     .imageFrame2 {
         padding: 0 5vw 0 0;
+        width: 40vw;
         max-width: 400px;
         flex-grow: 1;
         flex-shrink: 1;
