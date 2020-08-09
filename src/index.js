@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import MainPage from './pages/main';
+import App from './app';
 
-ReactDOM.render(<MainPage />, document.getElementById("index"));
+ReactDOM.render(<App />, document.getElementById("index"));
