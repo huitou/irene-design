@@ -70,14 +70,12 @@ class Images2 extends Component {
               onMouseEnter={this.onMouseEnterImageFrame1}
               onMouseLeave={this.onMouseLeaveImageFrame1}
             >
-              {isImage1Visible && (hoverOnImageFrame1
-                ? null
-                : <img
-                  className={image1}
-                  src="/images/image-2.1.png"
-                  alt="Music Stream Platform"
-                />
-              )}
+              <img
+                style={(!isImage1Visible || hoverOnImageFrame1) ? { display: 'none' } : {}}
+                className={image1}
+                src="/images/image-2.1.png"
+                alt="Music Stream Platform"
+              />
             </div>
           </VisibilitySensor>
         </div>
@@ -87,14 +85,12 @@ class Images2 extends Component {
               onMouseEnter={this.onMouseEnterImageFrame2}
               onMouseLeave={this.onMouseLeaveImageFrame2}
             >
-              {isImage2Visible && (hoverOnImageFrame2
-                ? null
-                : <img
-                  className={image2}
-                  src="/images/image-2.2.png"
-                  alt="eCommerce Website"
-                />
-              )}
+              <img
+                style={(!isImage2Visible || hoverOnImageFrame2) ? { display: 'none' } : {}}
+                className={image2}
+                src="/images/image-2.2.png"
+                alt="eCommerce Website"
+              />
             </div>
           </VisibilitySensor>
         </div>
