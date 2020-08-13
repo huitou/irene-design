@@ -1,28 +1,24 @@
-.headerArea {
-    width: 100%;
+.workNameArea {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.nameFrame {
-    padding: 5vw;
+.workNameFrame {
+    padding: 0 5vw;
 }
 
-.name {
-    font-size: 1em;
+.workName {
+    font-size: 2em;
     color: #4f4f4f;
 }
 
-.linksFrame {
-    padding: 5vw;
+.companyNameFrame {
+    padding: 0 5vw;
 }
 
-.links {
-    padding: 0px;
-}
-
-.link {
+.companyName {
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
     color: #4f4f4f;

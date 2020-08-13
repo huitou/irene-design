@@ -1,0 +1,17 @@
+.workTypeArea {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.workTypeFrame {
+    padding: 5vw;
+}
+
+.workType {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    color: #4f4f4f;
+    padding: 0 10px;
+}
