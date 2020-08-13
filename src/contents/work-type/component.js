@@ -3,9 +3,7 @@ import React, { Component } from 'react';
 import {
   workTypeArea,
   workTypeFrame,
-  workName,
-  companyNameFrame,
-  companyName,
+  workType,
 } from './component.css';
 
 
@@ -14,7 +12,7 @@ class WorkType extends Component {
     return (
       <div className={workTypeArea}>
         <div className={workTypeFrame}>
-          <div className={companyName}>
+          <div className={workType}>
             <span>Mobile App Redesign</span>
           </div>
         </div>

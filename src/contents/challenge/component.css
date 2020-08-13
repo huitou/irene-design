@@ -1,0 +1,30 @@
+.introductionArea {
+    padding: 0;
+}
+
+.introductionFrame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textFrame {
+    padding: 0;
+}
+
+.title {
+    padding: 20px 20vw;
+    text-align: left;
+}
+
+.paragraph {
+    padding: 15px 20vw;
+}
+
+.imageFrame {
+    padding: 60px 5vw;
+}
+
+.image {
+    width: 100%;
+}
