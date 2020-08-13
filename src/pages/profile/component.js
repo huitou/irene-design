@@ -4,12 +4,13 @@ import PageLayout from '../../layout/page';
 import ProfileBodyLayout from '../../layout/bodys/profile';
 import Header from '../../contents/header';
 import ProgileArea1 from '../../contents/profile-area-1';
+import ProgileArea2 from '../../contents/profile-area-2';
 import Footer from '../../contents/footer';
 
 const bodyRender = () => (
   <ProfileBodyLayout
     area1Render={() => <ProgileArea1 />}
-    area2Render={() => null}
+    area2Render={() => <ProgileArea2 />}
   />
 );
 

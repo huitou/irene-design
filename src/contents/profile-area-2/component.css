@@ -1,0 +1,17 @@
+.profileArea {
+    border: none;
+}
+
+.contentFrame {
+    padding: 0 5vw;
+}
+
+.content {
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    color: #4f4f4f;
+}
+
+.textContent {
+    width: 40%;
+}
