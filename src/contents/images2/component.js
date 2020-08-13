@@ -9,6 +9,11 @@ import {
   imageFrame2,
   image1,
   image2,
+  workPanel,
+  type,
+  name,
+  description,
+  link,
 } from './component.css';
 
 class Images2 extends Component {
@@ -70,9 +75,18 @@ class Images2 extends Component {
               onMouseEnter={this.onMouseEnterImageFrame1}
               onMouseLeave={this.onMouseLeaveImageFrame1}
             >
-              <img
+              <div className={image1}
+                style={(!isImage1Visible || !hoverOnImageFrame1) ? { display: 'none' } : {}}
+              >
+                <div className={workPanel}>
+                  <div className={type}>E-commerce website</div>
+                  <div className={name}>House2Home</div>
+                  <div className={description}>A unique website that empowers customers to shop products by mood.</div>
+                  <a className={link} href="/">View the case study</a>
+                </div>
+              </div>
+              <img className={image1}
                 style={(!isImage1Visible || hoverOnImageFrame1) ? { display: 'none' } : {}}
-                className={image1}
                 src="/images/image-2.1.png"
                 alt="Music Stream Platform"
               />
@@ -85,9 +99,18 @@ class Images2 extends Component {
               onMouseEnter={this.onMouseEnterImageFrame2}
               onMouseLeave={this.onMouseLeaveImageFrame2}
             >
-              <img
+              <div className={image2}
+                style={(!isImage2Visible || !hoverOnImageFrame2) ? { display: 'none' } : {}}
+              >
+                <div className={workPanel}>
+                  <div className={type}>E-commerce website</div>
+                  <div className={name}>House2Home</div>
+                  <div className={description}>A unique website that empowers customers to shop products by mood.</div>
+                  <a className={link} href="/">View the case study</a>
+                </div>
+              </div>
+              <img className={image2}
                 style={(!isImage2Visible || hoverOnImageFrame2) ? { display: 'none' } : {}}
-                className={image2}
                 src="/images/image-2.2.png"
                 alt="eCommerce Website"
               />
