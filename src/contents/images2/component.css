@@ -104,3 +104,37 @@
     width: 100%;
     height: 100%;
 }
+
+.workPanel {
+    padding: 0 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.type {
+    padding-top: 7%;
+    flex-grow: 1;
+    font-size: 16px;
+    color: #ffffff;
+}
+.name {
+    flex-grow: 2;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.description {
+    flex-grow: 4;
+    height: 120px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, .5);
+    line-height: 29px;
+}
+.link {
+    padding-bottom: 5%;
+    flex-grow: 1;
+    font-size: 20px;
+    color: #ffffff;
+}
