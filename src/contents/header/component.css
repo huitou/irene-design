@@ -1,0 +1,40 @@
+.headerArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoFrame {
+    padding: 5vw;
+}
+
+.name {
+    padding: 0;
+    cursor: pointer;
+}
+
+.logo {
+    width: 200px;
+    height: 24px;
+}
+
+.menuFrame {
+    padding: 5vw;
+}
+
+.menu {
+    padding: 0px;
+}
+
+.menuItem {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    padding: 0 10px;
+    color: #4f4f4f;
+    cursor: pointer;
+}
+
+.inactive {
+    cursor: default;
+    text-decoration: underline;
+}

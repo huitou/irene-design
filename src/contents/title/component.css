@@ -1,0 +1,18 @@
+.titleArea {
+    display: flex;
+    align-items: center;
+}
+
+.titleFrame {
+    padding: 0 5vw;
+}
+
+.title {
+    font-size: 43.5px;
+    color: #4f4f4f;
+    line-height: 55px;
+}
+
+.titleBold {
+    font-weight: bold;
+}

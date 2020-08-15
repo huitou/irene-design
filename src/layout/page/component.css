@@ -1,0 +1,23 @@
+.view {
+    display: flex;
+    justify-content: center;
+    background-color: #e5e6ea;
+}
+
+.page {
+    width: 90%;
+    max-width: 1260px;
+    background-color: #ffffff;
+}
+
+.header {
+    min-height: 100px;
+}
+
+.footer {
+    min-height: 120px;
+}
+
+.body {
+    padding: 0px;
+}

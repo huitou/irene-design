@@ -1,0 +1,32 @@
+.footerArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactFrame {
+    padding: 5vw;
+}
+
+.contact {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    color: #4f4f4f;
+}
+
+.contactItem {
+    height: 1.6em;
+}
+
+.socialFrame {
+    padding: 5vw;
+}
+
+.social {
+    padding: 0px;
+}
+
+.icon {
+    padding: 0 10px;
+    width: 20px;
+}
