@@ -4,6 +4,7 @@ import {
   headerArea,
   nameFrame,
   name,
+  logo,
   linksFrame,
   links,
   link,
@@ -16,7 +17,11 @@ class Header extends Component {
       <div className={headerArea}>
         <div className={nameFrame}>
           <div className={name}>
-            <span>irene lidia wang</span>
+            <img
+              className={logo}
+              src="/images/logo.png"
+              alt="Irene Lidia Wang"
+            />
           </div>
         </div>
         <div className={linksFrame}>
