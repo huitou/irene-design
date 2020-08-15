@@ -8,8 +8,8 @@ import './app.css';
 class App extends Component {
   render() {
     return (
-      // <MainPage />
-      <ProfilePage />
+      <MainPage />
+      // <ProfilePage />
     );
   }
 }
