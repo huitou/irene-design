@@ -102,7 +102,7 @@
 }
 
 .workPanel {
-    padding: 0 5%;
+    padding: 0 7.5%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -110,27 +110,27 @@
 }
 
 .type {
-    padding-top: 7%;
+    padding-top: 10%;
     flex-grow: 1;
-    font-size: 16px;
+    font-size: 20px;
     color: #ffffff;
 }
 .name {
     flex-grow: 2;
-    font-size: 28px;
+    font-size: 35px;
     color: #ffffff;
 }
 
 .description {
     flex-grow: 4;
     height: 120px;
-    font-size: 20px;
+    font-size: 25px;
     color: rgba(255, 255, 255, .5);
     line-height: 29px;
 }
 .link {
-    padding-bottom: 5%;
+    padding-bottom: 7.5%;
     flex-grow: 1;
-    font-size: 20px;
+    font-size: 25px;
     color: #ffffff;
 }
