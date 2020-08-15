@@ -1,11 +1,13 @@
 .view {
     display: flex;
     justify-content: center;
+    background-color: #e5e6ea;
 }
 
 .page {
-    width: 100%;
+    width: 90%;
     max-width: 1260px;
+    background-color: #ffffff;
 }
 
 .header {

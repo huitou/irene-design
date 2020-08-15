@@ -26,9 +26,7 @@
 
     .imageFrame1 {
         position: relative;
-        width: 40vw;
         padding-top: 71.3012%;
-        max-width: 400px;
         background-color: #F4D9AE;
         flex-grow: 1;
         flex-shrink: 1;
@@ -40,9 +38,7 @@
 
     .imageFrame2 {
         position: relative;
-        width: 40vw;
         padding-top: 71.3012%;
-        max-width: 400px;
         background: linear-gradient(to bottom right, #332E54, #E8E9EB);
         flex-grow: 1;
         flex-shrink: 1;
