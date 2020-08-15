@@ -24,16 +24,20 @@ class Footer extends Component {
         </div>
         <div className={socialFrame}>
           <div className={social}>
-            <img
-              className={icon}
-              src="/images/icons8-linkedin-100.png"
-              alt="LinkedIn"
-            />
-            <img
-              className={icon}
-              src="/images/icons8-instagram-100.png"
-              alt="Instagram"
-            />
+            <a href="https://www.linkedin.com/in/irene-lidia-wang/" target="_blank">
+              <img
+                className={icon}
+                src="/images/linkedin-black.png"
+                alt="LinkedIn"
+              />
+            </a>
+            <a href="https://www.instagram.com/irenelwang/" target="_blank">
+              <img
+                className={icon}
+                src="/images/instagram-black.png"
+                alt="Instagram"
+              />
+            </a>
           </div>
         </div>
       </div>

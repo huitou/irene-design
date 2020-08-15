@@ -9,8 +9,12 @@
 }
 
 .name {
-    font-size: 1em;
-    color: #4f4f4f;
+    padding: 0;
+}
+
+.logo {
+    width: 200px;
+    height: 24px;
 }
 
 .linksFrame {
