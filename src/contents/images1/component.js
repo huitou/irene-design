@@ -9,6 +9,7 @@ import {
   imageFrame2,
   image1,
   image2,
+  fadein,
   workPanel,
   type,
   name,
@@ -22,6 +23,8 @@ class Images1 extends Component {
     this.state = {
       isImage1Visible: false,
       isImage2Visible: false,
+      mouseLeaveImageFrame1: false,
+      mouseLeaveImageFrame2: false,
       hoverOnImageFrame1: false,
       hoverOnImageFrame2: false,
     };
@@ -37,13 +40,13 @@ class Images1 extends Component {
   onVisibility1Change(isVisible) {
     isVisible && setTimeout(
       () => this.setState(({ isImage1Visible }) => !isImage1Visible ? { isImage1Visible: true } : {}),
-      1000
+      500
     );
   }
   onVisibility2Change(isVisible) {
     isVisible && setTimeout(
       () => this.setState(({ isImage2Visible }) => !isImage2Visible ? { isImage2Visible: true } : {}),
-      1500
+      500
     );
   }
 
@@ -55,10 +58,16 @@ class Images1 extends Component {
   }
 
   onMouseLeaveImageFrame1() {
-    this.setState({ hoverOnImageFrame1: false });
+    this.setState({
+      hoverOnImageFrame1: false,
+      mouseLeaveImageFrame1: true,
+    });
   }
   onMouseLeaveImageFrame2() {
-    this.setState({ hoverOnImageFrame2: false });
+    this.setState({
+      hoverOnImageFrame2: false,
+      mouseLeaveImageFrame2: true,
+    });
   }
 
   render() {
@@ -67,6 +76,8 @@ class Images1 extends Component {
       isImage2Visible,
       hoverOnImageFrame1,
       hoverOnImageFrame2,
+      mouseLeaveImageFrame1,
+      mouseLeaveImageFrame2,
     } = this.state;
 
     return (
@@ -87,7 +98,7 @@ class Images1 extends Component {
                   <a className={link} href="/">View the case study</a>
                 </div>
               </div>
-              <img className={image1}
+              <img className={`${image1} ${!mouseLeaveImageFrame1 ? fadein : ''}`}
                 style={(!isImage1Visible || hoverOnImageFrame1) ? { display: 'none' } : {}}
                 src="/images/image-1.1.png"
                 alt="Food Sharing App - Leftlovers"
@@ -111,7 +122,7 @@ class Images1 extends Component {
                   <a className={link} href="/">View the case study</a>
                 </div>
               </div>
-              <img className={image2}
+              <img className={`${image2} ${!mouseLeaveImageFrame2 ? fadein : ''}`}
                 style={(!isImage2Visible || hoverOnImageFrame2) ? { display: 'none' } : {}}
                 src="/images/image-1.2.png"
                 alt="Education Platform"
