@@ -5,26 +5,37 @@
     align-items: center;
 }
 
-.nameFrame {
+.logoFrame {
     padding: 5vw;
 }
 
 .name {
-    font-size: 1em;
-    color: #4f4f4f;
+    padding: 0;
+    cursor: pointer;
 }
 
-.linksFrame {
+.logo {
+    width: 200px;
+    height: 24px;
+}
+
+.menuFrame {
     padding: 5vw;
 }
 
-.links {
+.menu {
     padding: 0px;
 }
 
-.link {
+.menuItem {
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
-    color: #4f4f4f;
     padding: 0 10px;
+    color: #4f4f4f;
+    cursor: pointer;
+}
+
+.inactive {
+    cursor: default;
+    text-decoration: underline;
 }
