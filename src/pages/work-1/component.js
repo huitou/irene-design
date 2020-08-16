@@ -7,6 +7,9 @@ import Challenge from '../../contents/challenge';
 import Solution from '../../contents/solution';
 import Feedback from '../../contents/feedback';
 
+const topImageSource = {
+  src: '/images/work-1/group-814.png',
+};
 const work = 'KidsClub Redesign';
 const company = 'Dose Juice';
 const titleText = 'A luxury digital destination for the fashion retail platform’s most loyal customers to discover the world’s most sought-after high jewelry and clothes.';
@@ -16,7 +19,7 @@ const introductionParagraphs = [
   'My initial design audit saw many opportunities for UI improvement throughout the entire app. However, due to time constraints, I narrowed the scope of this project to focus on key screens. I also conducted usability tests of the redesign to see if my changes actually improved the user experience.',
 ];
 const introductionImageSource = {
-  src: '/images/image-1.2.png',
+  src: '/images/work-1/group-900.png',
   alt: 'Education Platform',
 };
 
@@ -25,7 +28,7 @@ const challengeParagraphs = [
   'The second major UI experience was finding a set of illustrations to represent each event category like sport, fine art or cooking. The illustration would too have to work for both kids and adults. No budget was allocated to illustrations, so we needed to find a free illustration library.',
 ];
 const challengeImageSource = {
-  src: '/images/image-2.2.png',
+  src: '/images/work-1/group-901.png',
   alt: 'Education Platform',
 };
 
@@ -38,7 +41,7 @@ const solutionVideoSource = {
   type: 'video/webm',
 };
 const solutionImageSource = {
-  src: '/images/image-1.1.png',
+  src: '/images/work-1/group-902.png',
   alt: 'Education Platform',
 };
 
@@ -65,7 +68,7 @@ class Work1Page extends Component {
   render() {
     return (
       <WorkPageLayout
-        topRender={() => <TopContent work={work} company={company} />}
+        topRender={() => <TopContent work={work} company={company} imageSource={topImageSource} />}
         bodyRender={() => (
           <Fragment>
             <Introduction

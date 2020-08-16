@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { string } from 'prop-types';
+import { string, object } from 'prop-types';
 
 import Header from '../header';
 import WorkName from '../work-name'
@@ -12,10 +12,14 @@ import {
 
 class TopContent extends Component {
   render() {
-    const { work, company } = this.props;
+    const { imageSource, work, company } = this.props;
+    const backgroundStyle = {
+      backgroundImage: `url(${imageSource.src})`,
+      backgroundSize: '100% 100%',
+    };
 
     return (
-      <div className={topContentArea}>
+      <div className={topContentArea} style={imageSource.src ? backgroundStyle : {}}>
         <div className={topContentFrame}>
           <Header activePage="WORK_ITEM_1"
             theme="DARK"
@@ -29,8 +33,13 @@ class TopContent extends Component {
 }
 
 TopContent.propTypes = {
+  imageSource: object,
   work: string.isRequired,
   company: string.isRequired,
+};
+
+TopContent.defaultProps = {
+  imageSource: {},
 };
 
 export default TopContent;
