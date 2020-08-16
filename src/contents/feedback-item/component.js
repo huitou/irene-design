@@ -7,12 +7,11 @@ import {
   feedbackContent,
   feedbacker,
 } from './component.css';
-
-const feedbackContentText = 'Very fun to use and beautiful to see.';
-const feedbackerText = '— Francesca, 25';
+import { string } from 'prop-types';
 
 class FeedbackItem extends Component {
   render() {
+    const { feedbackContentText, feedbackerText } = this.props;
     return (
       <div className={feedbackItemArea}>
         <div className={feedbackItemFrame}>
@@ -25,5 +24,10 @@ class FeedbackItem extends Component {
     );
   }
 }
+
+FeedbackItem.propTypes = {
+  feedbackContentText: string.isRequired,
+  feedbackerText: string.isRequired,
+};
 
 export default FeedbackItem;

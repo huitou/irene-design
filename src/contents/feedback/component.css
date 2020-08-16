@@ -29,7 +29,7 @@
 }
 
 .rowItem {
-    flex-grow: 1;
+    width: 50%;
 }
 
 .itemLeft {
