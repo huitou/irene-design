@@ -26,6 +26,19 @@
     color: #4f4e4e
 }
 
+.videoArea {
+    padding: 60px 0;
+    width: 100%;
+}
+
+.videoFrame {
+    padding: 0;
+}
+
+.video {
+    width: 100%;
+}
+
 .imageArea {
     padding: 60px 0;
     width: 100%;

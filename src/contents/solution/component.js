@@ -7,6 +7,9 @@ import {
   textFrame,
   title,
   paragraph,
+  videoArea,
+  videoFrame,
+  video,
   imageArea,
   imageFrame,
   image,
@@ -16,7 +19,7 @@ const titleText = 'Design Solution';
 
 class Solution extends Component {
   render() {
-    const { paragraphs, imageSource } = this.props;
+    const { paragraphs, videoSource, imageSource } = this.props;
 
     return (
       <div className={introductionArea}>
@@ -27,6 +30,16 @@ class Solution extends Component {
             {paragraphs[1] && <p className={paragraph}>{paragraphs[1]}</p>}
             {paragraphs[2] && <p className={paragraph}>{paragraphs[2]}</p>}
           </div>
+          {videoSource &&
+            <div className={videoArea}>
+              <div className={videoFrame}>
+                <video className={video} controls width="250">
+                  <source src={videoSource.src} type={videoSource.type} />
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+              </div>
+            </div>
+          }
           {imageSource &&
             <div className={imageArea}>
               <div className={imageFrame}>
@@ -45,6 +58,7 @@ class Solution extends Component {
 
 Solution.propTypes = {
   paragraphs: arrayOf(string).isRequired,
+  videoSource: object,
   imageSource: object,
 };
 
