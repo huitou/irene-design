@@ -33,7 +33,7 @@ class Header extends Component {
           >
             <img
               className={logo}
-              src="/images/logo.png"
+              src={`/images/logo${isHomePage ? '' : '-white'}.png`}
               alt="Irene Lidia Wang"
             />
           </div>
