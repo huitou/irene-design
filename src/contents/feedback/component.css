@@ -1,0 +1,41 @@
+.feedbackArea {
+    padding: 0;
+}
+
+.feedbackFrame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    padding: 20px 0;
+    text-align: left;
+    font-size: 35px;
+    font-weight: bold;
+    color: #4f4e4e
+}
+
+.textFrame {
+    padding: 0;
+    width: 80%;
+    height: 1200px;
+}
+
+.row {
+    padding: 36px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rowItem {
+    width: 50%;
+}
+
+.itemLeft {
+    padding-right: 10%;
+}
+
+.itemRight {
+    padding-left: 10%;
+}

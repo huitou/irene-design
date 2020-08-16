@@ -1,0 +1,23 @@
+.view {
+    display: flex;
+    justify-content: center;
+    background-color: #e5e6ea;
+}
+
+.page {
+    width: 90%;
+    max-width: 1260px;
+    background-color: #ffffff;
+}
+
+.topArea {
+    padding: 0px;
+}
+
+.bodyArea {
+    padding: 0px;
+}
+
+.bottomArea {
+    padding: 0px;
+}

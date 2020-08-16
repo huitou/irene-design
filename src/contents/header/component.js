@@ -10,12 +10,15 @@ import {
   menu,
   menuItem,
   inactive,
+  dark,
 } from './component.css';
 
 
 class Header extends Component {
   render() {
-    const { activePage } = this.props;
+    const { theme, activePage } = this.props;
+
+    const isThemeDark = theme === 'DARK';
     const isHomePage = activePage === 'WORK';
 
     return (
@@ -30,14 +33,14 @@ class Header extends Component {
           >
             <img
               className={logo}
-              src="/images/logo.png"
+              src={`/images/logo${isHomePage ? '' : '-white'}.png`}
               alt="Irene Lidia Wang"
             />
           </div>
         </div>
         <div className={menuFrame}>
           <div className={menu}>
-            <span className={`${menuItem} ${isHomePage ? inactive : ''}`}
+            <span className={`${menuItem} ${isHomePage ? inactive : ''} ${isThemeDark ? dark : ''}`}
               onClick={() => {
                 if(!isHomePage) {
                   window.location = '/';
@@ -46,7 +49,7 @@ class Header extends Component {
             >
               Work
             </span>
-            <span className={menuItem}
+            <span className={`${menuItem} ${isThemeDark ? dark : ''}`}
               onClick={() => window.open('/docs/cv.pdf', '_blank')}
             >
               CV
@@ -59,10 +62,12 @@ class Header extends Component {
 }
 
 Header.propTypes = {
+  theme: string,
   activePage: string,
 };
 
 Header.defaultProps = {
+  theme: 'LIGHT',
   activePage: 'WORK',
 };
 

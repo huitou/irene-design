@@ -1,0 +1,40 @@
+.introductionArea {
+    padding: 0;
+}
+
+.introductionFrame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    padding: 20px 0;
+    text-align: left;
+    font-size: 20px;
+    color: #4f4e4e
+}
+
+.textFrame {
+    padding: 0;
+    max-width: 710px;
+}
+
+.paragraph {
+    padding: 15px 0;
+    font-size: 18px;
+    color: #4f4e4e
+}
+
+.imageArea {
+    padding: 60px 0;
+    width: 100%;
+}
+
+.imageFrame {
+    padding: 0;
+}
+
+.image {
+    width: 100%;
+}

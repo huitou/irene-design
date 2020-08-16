@@ -1,0 +1,26 @@
+.workNameArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.workNameFrame {
+    padding: 0 5vw;
+}
+
+.workName {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.companyNameFrame {
+    padding: 0 5vw;
+}
+
+.companyName {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 0 10px;
+}

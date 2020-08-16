@@ -1,4 +1,5 @@
 .headerArea {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,4 +38,8 @@
 .inactive {
     cursor: default;
     text-decoration: underline;
+}
+
+.dark {
+    color: #ffffff;
 }

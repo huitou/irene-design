@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 
 import MainPage from './pages/main';
-import ProfilePage from './pages/profile';
+import Work1Page from './pages/work-1';
 
 import './app.css';
 
 class App extends Component {
   render() {
     return (
-      <MainPage />
-      // <ProfilePage />
+      // <MainPage />
+      <Work1Page />
     );
   }
 }
