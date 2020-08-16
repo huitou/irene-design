@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { object, arrayOf } from 'prop-types';
 
 import FeedbackItem from '../feedback-item';
 
@@ -13,33 +14,12 @@ import {
   itemRight,
 } from './component.css';
 
-const feedbacks = [
-  {
-    content: 'Very fun to use and beautiful to see.',
-    feedbacker: '— Francesca, 25',
-  },
-  {
-    content: 'I really like the smooth horizontal navigation.',
-    feedbacker: '— Fuhang, 55',
-  },
-  {
-    content: 'Such beautiful images and original concept.',
-    feedbacker: '— Lorenzo, 20',
-  },
-  {
-    content: 'Unlike anything I’ve ever seen!',
-    feedbacker: '— Frances, 45',
-  },
-];
-
-
 const titleText = 'User feedback';
-const paragraph1 = 'Creating a visual style that would appeal to young and older people was the first major UI hurdle since we needed to cater to both children (average age 6 to 14) and their parents as the app target audience.';
-const paragraph2 = "The second major UI experience was finding a set of illustrations to represent each event category like sport, fine art or cooking. The illustration would too have to work for both kids and adults. No budget was allocated to illustrations, so we needed to find a free illustration library. ";
-const paragraph3 = undefined;
 
 class Feedback extends Component {
   render() {
+    const { feedbacks } = this.props;
+
     return (
       <div className={feedbackArea}>
         <div className={feedbackFrame}>
@@ -67,5 +47,9 @@ class Feedback extends Component {
     );
   }
 }
+
+Feedback.propTypes = {
+  feedbacks: arrayOf(object).isRequired,
+};
 
 export default Feedback;

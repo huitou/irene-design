@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { string } from 'prop-types';
 
 import {
   workNameArea,
@@ -8,24 +9,30 @@ import {
   companyName,
 } from './component.css';
 
-
 class WorkName extends Component {
   render() {
+    const { work, company } = this.props;
+
     return (
       <div className={workNameArea}>
         <div className={workNameFrame}>
           <div className={workName}>
-            <span>KidsClub Redesign</span>
+            <span>{work}</span>
           </div>
         </div>
         <div className={companyNameFrame}>
           <div className={companyName}>
-            <span>Dose Juice</span>
+            <span>{company}</span>
           </div>
         </div>
       </div>
     );
   }
 }
+
+WorkName.propTypes = {
+  work: string.isRequired,
+  company: string.isRequired,
+};
 
 export default WorkName;

@@ -21,9 +21,9 @@ class Introduction extends Component {
         <div className={introductionFrame}>
           <h3 className={title}>{titleText}</h3>
           <div className={textFrame}>
-            <p className={paragraph}>{paragraphs[0]}</p>
-            <p className={paragraph}>{paragraphs[1]}</p>
-            <p className={paragraph}>{paragraphs[2]}</p>
+            {paragraphs[0] && <p className={paragraph}>{paragraphs[0]}</p>}
+            {paragraphs[1] && <p className={paragraph}>{paragraphs[1]}</p>}
+            {paragraphs[2] && <p className={paragraph}>{paragraphs[2]}</p>}
           </div>
           <div className={imageArea}>
             <div className={imageFrame}>

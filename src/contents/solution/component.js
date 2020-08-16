@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { string, arrayOf } from 'prop-types';
 
 import {
   introductionArea,
@@ -12,20 +13,19 @@ import {
 } from './component.css';
 
 const titleText = 'Design Solution';
-const paragraph1 = 'To solve our UI challenges, we created a colourful interface that would appeal to kids but that still reads as clean and sophisticated for their parents. We chose a bright yellow as primary colour since yellow is most associated with happiness and optimism, as well as creativity. Rounded shapes were also chosen for a sofert and more approachable feel.';
-const paragraph2 = 'Pablo style illustrations with their joyful yet cool and sophisticated look felt like a natural fit to class up the app. The wide range of Pablo illustrations also allowed us to easily pick an illustration for most event categories and achieve visual consistency.';
-const paragraph3 = undefined;
 
 class Solution extends Component {
   render() {
+    const { paragraphs } = this.props;
+
     return (
       <div className={introductionArea}>
         <div className={introductionFrame}>
           <div className={textFrame}>
             <h4 className={title}>{titleText}</h4>
-            <p className={paragraph}>{paragraph1}</p>
-            <p className={paragraph}>{paragraph2}</p>
-            {paragraph3 && <p className={paragraph}>{paragraph3}</p>}
+            {paragraphs[0] && <p className={paragraph}>{paragraphs[0]}</p>}
+            {paragraphs[1] && <p className={paragraph}>{paragraphs[1]}</p>}
+            {paragraphs[2] && <p className={paragraph}>{paragraphs[2]}</p>}
           </div>
           <div className={imageArea}>
             <div className={imageFrame}>
@@ -40,5 +40,9 @@ class Solution extends Component {
     );
   }
 }
+
+Solution.propTypes = {
+  paragraphs: arrayOf(string).isRequired,
+};
 
 export default Solution;
