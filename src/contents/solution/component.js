@@ -11,12 +11,12 @@ import {
   image,
 } from './component.css';
 
-const titleText = 'Design Challenges';
-const paragraph1 = 'Creating a visual style that would appeal to young and older people was the first major UI hurdle since we needed to cater to both children (average age 6 to 14) and their parents as the app target audience.';
-const paragraph2 = "The second major UI experience was finding a set of illustrations to represent each event category like sport, fine art or cooking. The illustration would too have to work for both kids and adults. No budget was allocated to illustrations, so we needed to find a free illustration library. ";
+const titleText = 'Design Solution';
+const paragraph1 = 'To solve our UI challenges, we created a colourful interface that would appeal to kids but that still reads as clean and sophisticated for their parents. We chose a bright yellow as primary colour since yellow is most associated with happiness and optimism, as well as creativity. Rounded shapes were also chosen for a sofert and more approachable feel.';
+const paragraph2 = 'Pablo style illustrations with their joyful yet cool and sophisticated look felt like a natural fit to class up the app. The wide range of Pablo illustrations also allowed us to easily pick an illustration for most event categories and achieve visual consistency.';
 const paragraph3 = undefined;
 
-class Challenge extends Component {
+class Solution extends Component {
   render() {
     return (
       <div className={introductionArea}>
@@ -41,4 +41,4 @@ class Challenge extends Component {
   }
 }
 
-export default Challenge;
+export default Solution;

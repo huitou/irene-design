@@ -6,14 +6,15 @@ import {
   textFrame,
   title,
   paragraph,
+  imageArea,
   imageFrame,
   image,
 } from './component.css';
 
-const titleText = 'A reimagining of a mobile app designed to encourage children to get active.';
-const paragraph1 = 'OKidsClub is a mobile app by juice brand OJuice that connects children with events, activities and competitions, so that they can get more active and combat sedentary behaviour.';
-const paragraph2 = "We set out to redesign an experience that would reinvigorate the OJuice brand and reinforce the company's position as undisputed leader in the juice market.";
-const paragraph3 = 'We started by reviewing user reasearch, speaking to customers and drawing insights from customer interviews. The decision-making process, moving from consideration to purchase, was then translated into the website user experience.';
+const titleText = 'A luxury digital destination for the fashion retail platform’s most loyal customers to discover the world’s most sought-after high jewelry and clothes.';
+const paragraph1 = 'I collaborated with Kids Club for 3 weeks, where I sought to improve their mobile app’s visual UI style. Their app is in beta. It gives parents and their children personalised reccomendations of events, activities and competitions based on their interests, so that children can utilise their talents and build self-confidence.';
+const paragraph2 = "My initial design audit saw many opportunities for UI improvement throughout the entire app. However, due to time constraints, I narrowed the scope of this project to focus on key screens. I also conducted usability tests of the redesign to see if my changes actually improved the user experience.";
+const paragraph3 = undefined;
 
 class Introduction extends Component {
   render() {
@@ -26,11 +27,13 @@ class Introduction extends Component {
             <p className={paragraph}>{paragraph2}</p>
             <p className={paragraph}>{paragraph3}</p>
           </div>
-          <div className={imageFrame}>
-            <img className={image}
-              src="/images/image-1.2.png"
-              alt="Education Platform"
-            />
+          <div className={imageArea}>
+            <div className={imageFrame}>
+              <img className={image}
+                src="/images/image-1.2.png"
+                alt="Education Platform"
+              />
+            </div>
           </div>
         </div>
       </div>

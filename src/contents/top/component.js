@@ -17,7 +17,9 @@ class TopContent extends Component {
     return (
       <div className={topContentArea}>
         <div className={topContentFrame}>
-          <Header />
+          <Header activePage="WORK_ITEM_1"
+            theme="DARK"
+          />
           <WorkName />
           <WorkType />
         </div>

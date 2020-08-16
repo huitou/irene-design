@@ -10,18 +10,34 @@
 
 .title {
     padding: 60px 0;
-    width: 360px;
+    max-width: 644px;
     text-align: center;
+    font-size: 35px;
+    color: #4f4e4e
+}
+
+.textFrame {
+    padding: 0;
+    max-width: 710px;
 }
 
 .paragraph {
-    padding: 15px 20vw;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #4f4e4e
+}
+
+.imageArea {
+    padding: 60px 0;
+    width: 100%;
 }
 
 .imageFrame {
-    padding: 60px 5vw;
+    padding: 3% 10%;
+    background: #f1f1f1;
 }
 
 .image {
     width: 100%;
+    box-shadow: 10px 10px 10px rgba(85, 85, 100, 0.205);
 }

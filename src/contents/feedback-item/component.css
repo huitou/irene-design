@@ -1,0 +1,29 @@
+.feedbackItemArea {
+    padding: 0;
+}
+
+.feedbackItemFrame {
+    padding: 0;
+}
+
+.textFrame {
+    padding: 0;
+    max-width: 710px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feedbackContent {
+    padding: 15px 0;
+    font-size: 35px;
+    color: #4f4e4e
+}
+
+.feedbacker {
+    padding: 15px 0;
+    font-size: 17px;
+    font-style: italic;
+    color: #4f4e4e
+}
