@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { string, arrayOf } from 'prop-types';
+import { string, arrayOf, object } from 'prop-types';
 
 import {
   introductionArea,
@@ -14,7 +14,7 @@ import {
 
 class Introduction extends Component {
   render() {
-    const { titleText, paragraphs } = this.props;
+    const { titleText, paragraphs, imageSource } = this.props;
 
     return (
       <div className={introductionArea}>
@@ -25,14 +25,16 @@ class Introduction extends Component {
             {paragraphs[1] && <p className={paragraph}>{paragraphs[1]}</p>}
             {paragraphs[2] && <p className={paragraph}>{paragraphs[2]}</p>}
           </div>
-          <div className={imageArea}>
-            <div className={imageFrame}>
-              <img className={image}
-                src="/images/image-1.2.png"
-                alt="Education Platform"
-              />
+          {imageSource &&
+            <div className={imageArea}>
+              <div className={imageFrame}>
+                <img className={image}
+                  src={imageSource.src}
+                  alt={imageSource.alt}
+                />
+              </div>
             </div>
-          </div>
+          }
         </div>
       </div>
     );
@@ -42,6 +44,7 @@ class Introduction extends Component {
 Introduction.propTypes = {
   titleText: string.isRequired,
   paragraphs: arrayOf(string).isRequired,
+  imageSource: object,
 };
 
 export default Introduction;

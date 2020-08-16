@@ -33,11 +33,9 @@
 }
 
 .imageFrame {
-    padding: 3% 10%;
-    background: #f1f1f1;
+    padding: 0;
 }
 
 .image {
     width: 100%;
-    box-shadow: 10px 10px 10px rgba(85, 85, 100, 0.205);
 }
