@@ -36,14 +36,26 @@ const introductionResources = [
   },
 ];
 
-const challengeParagraphs = [
-  'Creating a visual style that would appeal to young and older people was the first major UI hurdle since we needed to cater to both children (average age 6 to 14) and their parents as the app target audience.',
-  'The second major UI experience was finding a set of illustrations to represent each event category like sport, fine art or cooking. The illustration would too have to work for both kids and adults. No budget was allocated to illustrations, so we needed to find a free illustration library.',
+const challengeResources = [
+  {
+    id: 1,
+    type: 'PARAGRAPH',
+    text: 'Creating a visual style that would appeal to young and older people was the first major UI hurdle since we needed to cater to both children (average age 6 to 14) and their parents as the app target audience.',
+  },
+  {
+    id: 2,
+    type: 'PARAGRAPH',
+    text: 'The second major UI experience was finding a set of illustrations to represent each event category like sport, fine art or cooking. The illustration would too have to work for both kids and adults. No budget was allocated to illustrations, so we needed to find a free illustration library.',
+  },
+  {
+    id: 3,
+    type: 'IMAGE',
+    imageSource: {
+      src: '/images/work-3/group-901.png',
+      alt: 'Education Platform',
+    },
+  },
 ];
-const challengeImageSource = {
-  src: '/images/work-3/group-901.png',
-  alt: 'Education Platform',
-};
 
 const solutionParagraphs = [
   'To solve our UI challenges, we created a colourful interface that would appeal to kids but that still reads as clean and sophisticated for their parents. We chose a bright yellow as primary colour since yellow is most associated with happiness and optimism, as well as creativity. Rounded shapes were also chosen for a sofert and more approachable feel.',
@@ -88,10 +100,7 @@ class Work3Page extends Component {
               titleText={titleText}
               resources={introductionResources}
             />
-            <Challenge
-              paragraphs={challengeParagraphs}
-              imageSource={challengeImageSource}
-            />
+            <Challenge resources={challengeResources} />
             <Solution
               paragraphs={solutionParagraphs}
               videoSource={solutionVideoSource}

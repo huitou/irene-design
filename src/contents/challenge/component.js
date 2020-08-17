@@ -15,28 +15,53 @@ import {
 const titleText = 'Design Challenges';
 
 class Challenge extends Component {
+  constructor(props) {
+    super(props);
+
+    this.contents = this.contents.bind(this);
+  }
+
+  contents() {
+    const { resources } = this.props;
+
+    return resources.map((resource, idx) => {
+      // TODO: to be refined.
+      if (idx === 0) return null;
+
+      if (resource.type === 'PARAGRAPH') {
+        return (
+          <div key={resource.id} className={textFrame}>
+            <p className={paragraph}>{resource.text}</p>
+          </div>
+        );
+      }
+
+      if (resource.type === 'IMAGE') {
+        return (
+          <div key={resource.id} className={imageArea}>
+            <div className={imageFrame}>
+              <img className={image}
+                src={resource.imageSource.src}
+                alt={resource.imageSource.alt}
+              />
+            </div>
+          </div>
+        );
+      }
+    });
+  }
+  
   render() {
-    const { paragraphs, imageSource } = this.props;
+    const { resources } = this.props;
 
     return (
       <div className={introductionArea}>
         <div className={introductionFrame}>
           <div className={textFrame}>
             <h4 className={title}>{titleText}</h4>
-            {paragraphs[0] && <p className={paragraph}>{paragraphs[0]}</p>}
-            {paragraphs[1] && <p className={paragraph}>{paragraphs[1]}</p>}
-            {paragraphs[2] && <p className={paragraph}>{paragraphs[2]}</p>}
+            <p className={paragraph}>{resources[0].text}</p>
           </div>
-          {imageSource &&
-            <div className={imageArea}>
-              <div className={imageFrame}>
-                <img className={image}
-                  src={imageSource.src}
-                  alt={imageSource.alt}
-                />
-              </div>
-            </div>
-          }
+          {this.contents()}
         </div>
       </div>
     );
@@ -44,8 +69,7 @@ class Challenge extends Component {
 }
 
 Challenge.propTypes = {
-  paragraphs: arrayOf(string).isRequired,
-  imageSource: object,
+  resources: arrayOf(object).isRequired,
 };
 
 export default Challenge;
