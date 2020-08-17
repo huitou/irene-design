@@ -47,7 +47,7 @@ class Introduction extends Component {
   }
 
   render() {
-    const { titleText, paragraphs, imageSource } = this.props;
+    const { titleText } = this.props;
 
     return (
       <div className={introductionArea}>
