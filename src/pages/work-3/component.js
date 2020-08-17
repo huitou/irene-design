@@ -57,6 +57,35 @@ const challengeResources = [
   },
 ];
 
+const solutionResources = [
+  {
+    id: 1,
+    type: 'PARAGRAPH',
+    text: 'To solve our UI challenges, we created a colourful interface that would appeal to kids but that still reads as clean and sophisticated for their parents. We chose a bright yellow as primary colour since yellow is most associated with happiness and optimism, as well as creativity. Rounded shapes were also chosen for a sofert and more approachable feel.',
+  },
+  {
+    id: 2,
+    type: 'PARAGRAPH',
+    text: 'Pablo style illustrations with their joyful yet cool and sophisticated look felt like a natural fit to class up the app. The wide range of Pablo illustrations also allowed us to easily pick an illustration for most event categories and achieve visual consistency.',
+  },
+  {
+    id: 3,
+    type: 'VIDEO',
+    videoSource: {
+      src: '/videos/vip-membership-video.mov',
+      type: 'video/webm',
+    },
+  },
+  {
+    id: 4,
+    type: 'IMAGE',
+    imageSource: {
+      src: '/images/work-3/group-902.png',
+      alt: 'Education Platform',
+    },
+  },
+];
+
 const solutionParagraphs = [
   'To solve our UI challenges, we created a colourful interface that would appeal to kids but that still reads as clean and sophisticated for their parents. We chose a bright yellow as primary colour since yellow is most associated with happiness and optimism, as well as creativity. Rounded shapes were also chosen for a sofert and more approachable feel.',
   'Pablo style illustrations with their joyful yet cool and sophisticated look felt like a natural fit to class up the app. The wide range of Pablo illustrations also allowed us to easily pick an illustration for most event categories and achieve visual consistency.',
@@ -105,6 +134,7 @@ class Work3Page extends Component {
               paragraphs={solutionParagraphs}
               videoSource={solutionVideoSource}
               imageSource={solutionImageSource}
+              resources={solutionResources}
             />
             <Feedback feedbacks={feedbacks} />
           </Fragment>
