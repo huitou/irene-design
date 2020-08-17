@@ -12,7 +12,7 @@ import {
 
 class TopContent extends Component {
   render() {
-    const { imageSource, work, company } = this.props;
+    const { imageSource, work, company, type } = this.props;
     const backgroundStyle = {
       backgroundImage: `url(${imageSource.src})`,
       backgroundSize: '100% 100%',
@@ -25,7 +25,7 @@ class TopContent extends Component {
             theme="DARK"
           />
           <WorkName work={work} company={company} />
-          <WorkType />
+          <WorkType type={type} />
         </div>
       </div>
     );
@@ -36,6 +36,7 @@ TopContent.propTypes = {
   imageSource: object,
   work: string.isRequired,
   company: string.isRequired,
+  type: string.isRequired,
 };
 
 TopContent.defaultProps = {

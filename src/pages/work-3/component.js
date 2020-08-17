@@ -10,10 +10,11 @@ import Feedback from '../../contents/feedback';
 const topImageSource = {
   src: '/images/work-3/group-814.png',
 };
-const work = 'KidsClub Redesign';
-const company = 'Dose Juice';
-const titleText = 'A luxury digital destination for the fashion retail platform’s most loyal customers to discover the world’s most sought-after high jewelry and clothes.';
+const work = 'VIP Membership';
+const company = 'Farfetch';
+const type = 'Free to Paid Conversion';
 
+const titleText = 'A luxury digital destination for the fashion retail platform’s most loyal customers to discover the world’s most sought-after high jewelry and clothes.';
 const introductionParagraphs = [
   'I collaborated with Kids Club for 3 weeks, where I sought to improve their mobile app’s visual UI style. Their app is in beta. It gives parents and their children personalised reccomendations of events, activities and competitions based on their interests, so that children can utilise their talents and build self-confidence.',
   'My initial design audit saw many opportunities for UI improvement throughout the entire app. However, due to time constraints, I narrowed the scope of this project to focus on key screens. I also conducted usability tests of the redesign to see if my changes actually improved the user experience.',
@@ -68,7 +69,7 @@ class Work3Page extends Component {
   render() {
     return (
       <WorkPageLayout
-        topRender={() => <TopContent work={work} company={company} imageSource={topImageSource} />}
+        topRender={() => <TopContent work={work} company={company} imageSource={topImageSource} type={type} />}
         bodyRender={() => (
           <Fragment>
             <Introduction
