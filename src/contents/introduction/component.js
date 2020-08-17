@@ -13,6 +13,39 @@ import {
 } from './component.css';
 
 class Introduction extends Component {
+  constructor(props) {
+    super(props);
+
+    this.contents = this.contents.bind(this);
+  }
+
+  contents() {
+    const { resources } = this.props;
+
+    return resources.map(resource => {
+      if (resource.type === 'PARAGRAPH') {
+        return (
+          <div key={resource.id} className={textFrame}>
+            <p className={paragraph}>{resource.text}</p>
+          </div>
+        );
+      }
+
+      if (resource.type === 'IMAGE') {
+        return (
+          <div key={resource.id} className={imageArea}>
+            <div className={imageFrame}>
+              <img className={image}
+                src={resource.imageSource.src}
+                alt={resource.imageSource.alt}
+              />
+            </div>
+          </div>
+        );
+      }
+    });
+  }
+
   render() {
     const { titleText, paragraphs, imageSource } = this.props;
 
@@ -20,21 +53,7 @@ class Introduction extends Component {
       <div className={introductionArea}>
         <div className={introductionFrame}>
           <h3 className={title}>{titleText}</h3>
-          <div className={textFrame}>
-            {paragraphs[0] && <p className={paragraph}>{paragraphs[0]}</p>}
-            {paragraphs[1] && <p className={paragraph}>{paragraphs[1]}</p>}
-            {paragraphs[2] && <p className={paragraph}>{paragraphs[2]}</p>}
-          </div>
-          {imageSource &&
-            <div className={imageArea}>
-              <div className={imageFrame}>
-                <img className={image}
-                  src={imageSource.src}
-                  alt={imageSource.alt}
-                />
-              </div>
-            </div>
-          }
+          {this.contents()}
         </div>
       </div>
     );
@@ -43,8 +62,7 @@ class Introduction extends Component {
 
 Introduction.propTypes = {
   titleText: string.isRequired,
-  paragraphs: arrayOf(string).isRequired,
-  imageSource: object,
+  resources: arrayOf(object).isRequired,
 };
 
 export default Introduction;
