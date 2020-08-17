@@ -15,14 +15,26 @@ const company = 'Farfetch';
 const type = 'Free to Paid Conversion';
 
 const titleText = 'A luxury digital destination for the fashion retail platform’s most loyal customers to discover the world’s most sought-after high jewelry and clothes.';
-const introductionParagraphs = [
-  'I collaborated with Kids Club for 3 weeks, where I sought to improve their mobile app’s visual UI style. Their app is in beta. It gives parents and their children personalised reccomendations of events, activities and competitions based on their interests, so that children can utilise their talents and build self-confidence.',
-  'My initial design audit saw many opportunities for UI improvement throughout the entire app. However, due to time constraints, I narrowed the scope of this project to focus on key screens. I also conducted usability tests of the redesign to see if my changes actually improved the user experience.',
+const introductionResources = [
+  {
+    id: 1,
+    type: 'PARAGRAPH',
+    text: 'I collaborated with Kids Club for 3 weeks, where I sought to improve their mobile app’s visual UI style. Their app is in beta. It gives parents and their children personalised reccomendations of events, activities and competitions based on their interests, so that children can utilise their talents and build self-confidence.',
+  },
+  {
+    id: 2,
+    type: 'PARAGRAPH',
+    text: 'My initial design audit saw many opportunities for UI improvement throughout the entire app. However, due to time constraints, I narrowed the scope of this project to focus on key screens. I also conducted usability tests of the redesign to see if my changes actually improved the user experience.',
+  },
+  {
+    id: 3,
+    type: 'IMAGE',
+    imageSource: {
+      src: '/images/work-3/group-900.png',
+      alt: 'Education Platform',
+    },
+  },
 ];
-const introductionImageSource = {
-  src: '/images/work-3/group-900.png',
-  alt: 'Education Platform',
-};
 
 const challengeParagraphs = [
   'Creating a visual style that would appeal to young and older people was the first major UI hurdle since we needed to cater to both children (average age 6 to 14) and their parents as the app target audience.',
@@ -74,8 +86,7 @@ class Work3Page extends Component {
           <Fragment>
             <Introduction
               titleText={titleText}
-              paragraphs={introductionParagraphs}
-              imageSource={introductionImageSource}
+              resources={introductionResources}
             />
             <Challenge
               paragraphs={challengeParagraphs}
