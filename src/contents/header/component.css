@@ -6,7 +6,7 @@
 }
 
 .logoFrame {
-    padding: 5vw;
+    padding: 64px 5vw;
 }
 
 .name {
@@ -20,7 +20,7 @@
 }
 
 .menuFrame {
-    padding: 5vw;
+    padding: 64px 5vw;
 }
 
 .menu {
@@ -30,9 +30,16 @@
 .menuItem {
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
-    padding: 0 10px;
     color: #4f4f4f;
     cursor: pointer;
+}
+
+.menuItemLeft {
+    padding-right: 35px;
+}
+
+.menuItemRight {
+    padding-left: 35px;
 }
 
 .inactive {

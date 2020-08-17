@@ -40,13 +40,13 @@ class Images2 extends Component {
   onVisibility1Change(isVisible) {
     isVisible && setTimeout(
       () => this.setState(({ isImage1Visible }) => !isImage1Visible ? { isImage1Visible: true } : {}),
-      500
+      0
     );
   }
   onVisibility2Change(isVisible) {
     isVisible && setTimeout(
       () => this.setState(({ isImage2Visible }) => !isImage2Visible ? { isImage2Visible: true } : {}),
-      500
+      0
     );
   }
 

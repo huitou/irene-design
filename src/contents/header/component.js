@@ -10,6 +10,8 @@ import {
   menuFrame,
   menu,
   menuItem,
+  menuItemLeft,
+  menuItemRight,
   inactive,
   dark,
 } from './component.css';
@@ -35,9 +37,9 @@ class Header extends Component {
         <div className={menuFrame}>
           <div className={menu}>
             <Link style={{ textDecoration: 'none' }} to="/">
-              <span className={`${menuItem} ${isHomePage ? inactive : ''} ${isThemeDark ? dark : ''}`}>Work</span>
+              <span className={`${menuItem} ${menuItemLeft} ${isHomePage ? inactive : ''} ${isThemeDark ? dark : ''}`}>Work</span>
             </Link>
-            <span className={`${menuItem} ${isThemeDark ? dark : ''}`}
+            <span className={`${menuItem} ${menuItemRight} ${isThemeDark ? dark : ''}`}
               onClick={() => window.open('/docs/cv.pdf', '_blank')}
             >
               CV
