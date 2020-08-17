@@ -125,17 +125,9 @@ class Work3Page extends Component {
         topRender={() => <TopContent work={work} company={company} imageSource={topImageSource} type={type} />}
         bodyRender={() => (
           <Fragment>
-            <Introduction
-              titleText={titleText}
-              resources={introductionResources}
-            />
+            <Introduction titleText={titleText} resources={introductionResources} />
             <Challenge resources={challengeResources} />
-            <Solution
-              paragraphs={solutionParagraphs}
-              videoSource={solutionVideoSource}
-              imageSource={solutionImageSource}
-              resources={solutionResources}
-            />
+            <Solution resources={solutionResources} />
             <Feedback feedbacks={feedbacks} />
           </Fragment>
         )}
