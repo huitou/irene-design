@@ -95,7 +95,7 @@ class Images2 extends Component {
                   <div className={type}>E-commerce website</div>
                   <div className={name}>House2Home</div>
                   <div className={description}>A unique website that empowers customers to shop products by mood.</div>
-                  <a className={link} href="/">View the case study</a>
+                  <a className={link} href="/work-3">View the case study</a>
                 </div>
               </div>
               <img className={`${image1} ${!mouseLeaveImageFrame1 ? fadein : ''}`}
@@ -119,7 +119,7 @@ class Images2 extends Component {
                   <div className={type}>E-commerce website</div>
                   <div className={name}>House2Home</div>
                   <div className={description}>A unique website that empowers customers to shop products by mood.</div>
-                  <a className={link} href="/">View the case study</a>
+                  <a className={link} href="/work-4">View the case study</a>
                 </div>
               </div>
               <img className={`${image2} ${!mouseLeaveImageFrame2 ? fadein : ''}`}

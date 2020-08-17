@@ -10,7 +10,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: '[hash].bundle.js'
   },
   module: {
     rules: [
@@ -42,6 +42,7 @@ module.exports = {
   plugins: [htmlPlugin],
   devtool: "eval-source-map",
   devServer: {
-    contentBase: path.join(__dirname, 'public')
+    contentBase: path.join(__dirname, 'public'),
+    historyApiFallback: true
   }
 };

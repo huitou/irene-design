@@ -8,7 +8,7 @@ import Solution from '../../contents/solution';
 import Feedback from '../../contents/feedback';
 
 const topImageSource = {
-  src: '/images/work-1/group-814.png',
+  src: '/images/work-3/group-814.png',
 };
 const work = 'VIP Membership';
 const company = 'Farfetch';
@@ -20,7 +20,7 @@ const introductionParagraphs = [
   'My initial design audit saw many opportunities for UI improvement throughout the entire app. However, due to time constraints, I narrowed the scope of this project to focus on key screens. I also conducted usability tests of the redesign to see if my changes actually improved the user experience.',
 ];
 const introductionImageSource = {
-  src: '/images/work-1/group-900.png',
+  src: '/images/work-3/group-900.png',
   alt: 'Education Platform',
 };
 
@@ -29,7 +29,7 @@ const challengeParagraphs = [
   'The second major UI experience was finding a set of illustrations to represent each event category like sport, fine art or cooking. The illustration would too have to work for both kids and adults. No budget was allocated to illustrations, so we needed to find a free illustration library.',
 ];
 const challengeImageSource = {
-  src: '/images/work-1/group-901.png',
+  src: '/images/work-3/group-901.png',
   alt: 'Education Platform',
 };
 
@@ -42,7 +42,7 @@ const solutionVideoSource = {
   type: 'video/webm',
 };
 const solutionImageSource = {
-  src: '/images/work-1/group-902.png',
+  src: '/images/work-3/group-902.png',
   alt: 'Education Platform',
 };
 
@@ -65,7 +65,7 @@ const feedbacks = [
   },
 ];
 
-class Work1Page extends Component {
+class Work3Page extends Component {
   render() {
     return (
       <WorkPageLayout
@@ -94,4 +94,4 @@ class Work1Page extends Component {
   }
 }
 
-export default Work1Page;
+export default Work3Page;

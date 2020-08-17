@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { string } from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import {
   headerArea,
@@ -13,7 +14,6 @@ import {
   dark,
 } from './component.css';
 
-
 class Header extends Component {
   render() {
     const { theme, activePage } = this.props;
@@ -24,31 +24,19 @@ class Header extends Component {
     return (
       <div className={headerArea}>
         <div className={logoFrame}>
-          <div className={`${name} ${isHomePage ? inactive : ''}`}
-            onClick={() => {
-              if(!isHomePage) {
-                window.location = '/';
-              }
-            }}
-          >
+          <Link to="/">
             <img
               className={logo}
               src={`/images/logo${isHomePage ? '' : '-white'}.png`}
               alt="Irene Lidia Wang"
             />
-          </div>
+          </Link>
         </div>
         <div className={menuFrame}>
           <div className={menu}>
-            <span className={`${menuItem} ${isHomePage ? inactive : ''} ${isThemeDark ? dark : ''}`}
-              onClick={() => {
-                if(!isHomePage) {
-                  window.location = '/';
-                }
-              }}
-            >
-              Work
-            </span>
+            <Link style={{ textDecoration: 'none' }} to="/">
+              <span className={`${menuItem} ${isHomePage ? inactive : ''} ${isThemeDark ? dark : ''}`}>Work</span>
+            </Link>
             <span className={`${menuItem} ${isThemeDark ? dark : ''}`}
               onClick={() => window.open('/docs/cv.pdf', '_blank')}
             >
