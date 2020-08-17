@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { string, arrayOf, object } from 'prop-types';
+import { arrayOf, object } from 'prop-types';
 
 import {
   introductionArea,
@@ -48,6 +48,21 @@ class Challenge extends Component {
           </div>
         );
       }
+
+      if (resource.type === 'VIDEO') {
+        return (
+          <div key={resource.id} className={videoArea}>
+            <div className={videoFrame}>
+              <video className={video} controls width="250">
+                <source src={resource.videoSource.src} type={resource.videoSource.type} />
+                Sorry, your browser doesn't support embedded videos.
+              </video>
+            </div>
+          </div>
+        );
+      }
+
+      return null;
     });
   }
   

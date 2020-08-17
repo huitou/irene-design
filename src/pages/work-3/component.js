@@ -86,19 +86,6 @@ const solutionResources = [
   },
 ];
 
-const solutionParagraphs = [
-  'To solve our UI challenges, we created a colourful interface that would appeal to kids but that still reads as clean and sophisticated for their parents. We chose a bright yellow as primary colour since yellow is most associated with happiness and optimism, as well as creativity. Rounded shapes were also chosen for a sofert and more approachable feel.',
-  'Pablo style illustrations with their joyful yet cool and sophisticated look felt like a natural fit to class up the app. The wide range of Pablo illustrations also allowed us to easily pick an illustration for most event categories and achieve visual consistency.',
-];
-const solutionVideoSource = {
-  src: '/videos/vip-membership-video.mov',
-  type: 'video/webm',
-};
-const solutionImageSource = {
-  src: '/images/work-3/group-902.png',
-  alt: 'Education Platform',
-};
-
 const feedbacks = [
   {
     content: 'Very fun to use and beautiful to see.',
@@ -125,17 +112,9 @@ class Work3Page extends Component {
         topRender={() => <TopContent work={work} company={company} imageSource={topImageSource} type={type} />}
         bodyRender={() => (
           <Fragment>
-            <Introduction
-              titleText={titleText}
-              resources={introductionResources}
-            />
+            <Introduction titleText={titleText} resources={introductionResources} />
             <Challenge resources={challengeResources} />
-            <Solution
-              paragraphs={solutionParagraphs}
-              videoSource={solutionVideoSource}
-              imageSource={solutionImageSource}
-              resources={solutionResources}
-            />
+            <Solution resources={solutionResources} />
             <Feedback feedbacks={feedbacks} />
           </Fragment>
         )}
