@@ -6,7 +6,7 @@
 }
 
 .workNameFrame {
-    padding: 22px 5vw;
+    padding: 2vw 5vw;
 }
 
 .workName {
@@ -23,5 +23,24 @@
     font-family: 'Crimson Text', serif;
     font-size: 22px;
     color: #ffffff;
-    padding: 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .workName {
+        font-size: 60px;
+    }
+
+    .companyName {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .workName {
+        font-size: 36px;
+    }
+
+    .companyName {
+        font-size: 10px;
+    }
 }
