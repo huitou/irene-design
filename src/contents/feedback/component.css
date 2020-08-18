@@ -23,13 +23,14 @@
 }
 
 .row {
-    padding: 36px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .rowItem {
-    width: 50%;
+    width: 40%;
+    padding: 36px 0;
 }
 
 .itemLeft {
@@ -38,4 +39,18 @@
 
 .itemRight {
     padding-left: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+    .rowItem {
+        width: 100%;
+    }
+
+    .itemLeft {
+        padding-right: 0;
+    }
+
+    .itemRight {
+        padding-left: 0;
+    }
 }
