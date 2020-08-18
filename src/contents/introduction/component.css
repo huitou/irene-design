@@ -10,9 +10,10 @@
 
 .title {
     padding: 60px 0;
-    max-width: 710px;
+    max-width: 660px;
     text-align: center;
     font-size: 35px;
+    line-height: 48px;
     color: #4f4e4e
 }
 
