@@ -48,7 +48,7 @@ class Introduction extends Component {
         return (
           <div key={resource.id} className={videoArea}>
             <div className={videoFrame}>
-              <video className={video} controls width="250">
+              <video className={video} controls>
                 <source src={resource.videoSource.src} type={resource.videoSource.type} />
                 Sorry, your browser doesn't support embedded videos.
               </video>

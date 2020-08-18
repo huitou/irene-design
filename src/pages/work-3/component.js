@@ -73,7 +73,7 @@ const solutionResources = [
     type: 'VIDEO',
     videoSource: {
       src: '/videos/vip-membership-video.mov',
-      type: 'video/webm',
+      type: 'video/mp4',
     },
   },
   {
