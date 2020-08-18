@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import {
   headerArea,
   logoFrame,
-  name,
   logo,
   menuFrame,
   menu,
@@ -36,14 +35,18 @@ class Header extends Component {
         </div>
         <div className={menuFrame}>
           <div className={menu}>
-            <Link style={{ textDecoration: 'none' }} to="/">
-              <span className={`${menuItem} ${menuItemLeft} ${isHomePage ? inactive : ''} ${isThemeDark ? dark : ''}`}>Work</span>
-            </Link>
-            <span className={`${menuItem} ${menuItemRight} ${isThemeDark ? dark : ''}`}
-              onClick={() => window.open('/docs/cv.pdf', '_blank')}
-            >
-              CV
-            </span>
+            <div className={menuItemLeft}>
+              <Link style={{ textDecoration: 'none' }} to="/">
+                <span className={`${menuItem} ${isHomePage ? inactive : ''} ${isThemeDark ? dark : ''}`}>Work</span>
+              </Link>
+            </div>
+            <div className={menuItemRight}>
+              <span className={`${menuItem} ${isThemeDark ? dark : ''}`}
+                onClick={() => window.open('/docs/cv.pdf', '_blank')}
+              >
+                CV
+              </span>
+            </div>
           </div>
         </div>
       </div>
