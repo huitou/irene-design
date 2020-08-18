@@ -10,9 +10,9 @@ import Feedback from '../../contents/feedback';
 const topImageSource = {
   src: '/images/work-3/group-814.png',
 };
-const work = 'VIP Membership';
+const work = 'VIPrivé';
 const company = 'Farfetch';
-const type = 'Free to Paid Conversion';
+const type = '';
 
 const titleText = 'A luxury digital destination for the fashion retail platform’s most loyal customers to discover the world’s most sought-after high jewelry and clothes.';
 const introductionResources = [

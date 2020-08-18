@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import MainPage from './pages/main';
 import Work3Page from './pages/work-3';
+import Work4Page from './pages/work-4';
 
 import './app.css';
 
@@ -21,7 +22,7 @@ class App extends Component {
             <Work3Page />
           </Route>
           <Route path="/work-4">
-            <Work3Page />
+            <Work4Page />
           </Route>
           <Route path="/">
             <MainPage />
