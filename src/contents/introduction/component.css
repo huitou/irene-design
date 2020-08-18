@@ -9,7 +9,7 @@
 }
 
 .title {
-    padding: 60px 0;
+    padding: 60px 5vw;
     max-width: 660px;
     text-align: center;
     font-size: 35px;
@@ -18,7 +18,7 @@
 }
 
 .textFrame {
-    padding: 0;
+    padding: 0 5vw;
     max-width: 710px;
 }
 

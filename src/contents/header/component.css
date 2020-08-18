@@ -6,12 +6,8 @@
 }
 
 .logoFrame {
-    padding: 64px 5vw;
-}
-
-.name {
-    padding: 0;
-    cursor: pointer;
+    width: 50%;
+    padding: 5vw;
 }
 
 .logo {
@@ -20,11 +16,14 @@
 }
 
 .menuFrame {
-    padding: 64px 5vw;
+    width: 50%;
+    padding: 5vw;
 }
 
 .menu {
     padding: 0px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .menuItem {
@@ -35,11 +34,11 @@
 }
 
 .menuItemLeft {
-    padding-right: 35px;
+    padding-right: 7.5%;
 }
 
 .menuItemRight {
-    padding-left: 35px;
+    padding-left: 7.5%;
 }
 
 .inactive {
