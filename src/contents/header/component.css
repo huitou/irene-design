@@ -45,6 +45,7 @@
 .inactive {
     cursor: default;
     text-decoration: underline;
+    text-underline-position: under;
 }
 
 .dark {

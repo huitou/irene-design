@@ -152,5 +152,6 @@
     flex-grow: 1;
     font-size: 22px;
     font-weight: 400;
+    text-underline-position: under;
     color: #ffffff;
 }
