@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { string, arrayOf, object } from 'prop-types';
+import React, { Component, Fragment } from 'react';
+import { oneOfType, string, arrayOf, object } from 'prop-types';
 
 import {
   introductionArea,
@@ -17,6 +17,7 @@ class Introduction extends Component {
     super(props);
 
     this.contents = this.contents.bind(this);
+    this.getTitle = this.getTitle.bind(this);
   }
 
   contents() {
@@ -61,13 +62,19 @@ class Introduction extends Component {
     });
   }
 
-  render() {
+  getTitle() {
     const { titleText } = this.props;
 
+    return typeof(titleText) === 'string'
+      ? titleText
+      : titleText.map((part, idx) => <Fragment key={idx}>{part}<br/></Fragment>);
+  }
+
+  render() {
     return (
       <div className={introductionArea}>
         <div className={introductionFrame}>
-          <h3 className={title}>{titleText}</h3>
+          <h3 className={title}>{this.getTitle()}</h3>
           {this.contents()}
         </div>
       </div>
@@ -76,7 +83,10 @@ class Introduction extends Component {
 }
 
 Introduction.propTypes = {
-  titleText: string.isRequired,
+  titleText: oneOfType([
+    string,
+    arrayOf(string)
+  ]).isRequired,
   resources: arrayOf(object).isRequired,
 };
 

@@ -15,7 +15,7 @@ const work = 'Skincare Quiz';
 const company = 'GV Design Sprint';
 const type = '';
 
-const titleText = 'A quiz that makes finding the right products for your skin’s needs easy (and puppy-licious).';
+const titleText = ['A quiz that makes finding the right products for your skin’s needs easy', '(and puppy-licious).'];
 const introductionResources = [
   {
     id: 1,
