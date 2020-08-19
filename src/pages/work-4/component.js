@@ -45,7 +45,7 @@ const challengeResources = [
   {
     id: 3,
     type: 'PARAGRAPH',
-    text: 'An additional consideration was that I wanted to design an experience that felt inclusive and diverse. It was important for me to offer a safe space for all people, regardless of gender, sexuality or skin colour, to explore and learn more about skincare.',
+    text: 'An additional consideration was that I wanted my design to make the user feel at ease throughout the entire process of finding the right product for their needs. Skin issues can be a sensitive and stressful matter for many people and we needed to make sure that users didn’t drop out of the experience out of frustration.',
   },
   {
     id: 4,
@@ -82,12 +82,12 @@ const solutionResources = [
   {
     id: 4,
     type: 'PARAGRAPH',
-    text: 'When designing this experience, I needed to keep in mind the visual style of my chosen skincare brand, Curology. Studying Curology’s brand thoroughly, I created page designs featuring their typical dark-purple-and-white colour palette and minimalistic feel used by the brand for the packaging of their skincare products.',
+    text: 'When designing this experience, I needed to keep in mind the visual style of my chosen skincare brand, Curology. Studying Curology’s brand thoroughly, I created page designs featuring their typical dark-purple-and-white colour palette and minimalistic feel used for the packaging of Curology’s skincare products.',
   },
   {
     id: 5,
     type: 'PARAGRAPH',
-    text: 'To communicate a sense of inclusivity and diversity, I used images of puppies rather than people to avoid leaving out those who would not have been represented in the few photos I could have selected. And besides, everybody loves puppies!',
+    text: 'I used images of puppies instead of people to move user attention away from the skin issues users might have and make the overall process of achieving better skin less stressful. This ensures users don’t drop out of the experience out of frustration and stay engaged throughout. And besides, everybody loves puppies!',
   },
   {
     id: 6,

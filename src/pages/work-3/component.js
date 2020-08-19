@@ -11,20 +11,15 @@ const topImageSource = {
   src: '/images/work-3/group-814.png',
 };
 const work = 'VIPrivé';
-const company = 'Farfetch';
+const company = 'Free to Paid Conversion';
 const type = '';
 
-const titleText = 'A luxury digital destination for the fashion retail platform’s most loyal customers to discover the world’s most sought-after high jewelry and clothes.';
+const titleText = 'A members-only luxury digital destination for Farfetch’s customers to discover the world’s most sought-after fashion brands.';
 const introductionResources = [
   {
     id: 1,
     type: 'PARAGRAPH',
-    text: 'I collaborated with Kids Club for 3 weeks, where I sought to improve their mobile app’s visual UI style. Their app is in beta. It gives parents and their children personalised reccomendations of events, activities and competitions based on their interests, so that children can utilise their talents and build self-confidence.',
-  },
-  {
-    id: 2,
-    type: 'PARAGRAPH',
-    text: 'My initial design audit saw many opportunities for UI improvement throughout the entire app. However, due to time constraints, I narrowed the scope of this project to focus on key screens. I also conducted usability tests of the redesign to see if my changes actually improved the user experience.',
+    text: 'In April 2020, I worked solo to simulate what it’s like to design an experience that allows users to subscribe to a premium (paid) product. Springboard provided the problem, project goals, constraints, and user research. This project gave me experience working with business goals, which in this case was achieving good conversion rates.',
   },
   {
     id: 3,
@@ -40,12 +35,12 @@ const challengeResources = [
   {
     id: 1,
     type: 'PARAGRAPH',
-    text: 'Creating a visual style that would appeal to young and older people was the first major UI hurdle since we needed to cater to both children (average age 6 to 14) and their parents as the app target audience.',
+    text: 'One of the many challenges of this project was to come up with an idea for the premium product. I needed to find a way to create an experience that gave the user the opportunity — and a compelling reason — to subscribe. For this project, I also needed to choose an existing e-commerce brand as the fictitious company offering this service.',
   },
   {
     id: 2,
     type: 'PARAGRAPH',
-    text: 'The second major UI experience was finding a set of illustrations to represent each event category like sport, fine art or cooking. The illustration would too have to work for both kids and adults. No budget was allocated to illustrations, so we needed to find a free illustration library.',
+    text: 'Additionally, I had to create different page designs for different user flows in order to take advantage of every opportunity to convert free users into paying customers. This posed additional UX challenges because the same UI had to be adapted to different formats, including a landing page and a pop-up.',
   },
   {
     id: 3,
@@ -61,12 +56,12 @@ const solutionResources = [
   {
     id: 1,
     type: 'PARAGRAPH',
-    text: 'To solve our UI challenges, we created a colourful interface that would appeal to kids but that still reads as clean and sophisticated for their parents. We chose a bright yellow as primary colour since yellow is most associated with happiness and optimism, as well as creativity. Rounded shapes were also chosen for a sofert and more approachable feel.',
+    text: 'I created VIPrivé, an online space offering users the unique opportunity to discover the world’s most exclusive high fashion maisons through a member-only service. I chose luxury fashion retail platform Farfetch as the fictitious company for this project and created a design that is consistent with their brand and visual style.',
   },
   {
     id: 2,
     type: 'PARAGRAPH',
-    text: 'Pablo style illustrations with their joyful yet cool and sophisticated look felt like a natural fit to class up the app. The wide range of Pablo illustrations also allowed us to easily pick an illustration for most event categories and achieve visual consistency.',
+    text: 'Along with private viewings of the newest standout and exclusive collections, VIPrivé customers have access to premium services including priority access, complimentary worldwide delivery, and a dedicated personal shopper who will help members select pieces from the curated collection.',
   },
   {
     id: 3,
@@ -78,6 +73,11 @@ const solutionResources = [
   },
   {
     id: 4,
+    type: 'PARAGRAPH',
+    text: 'Call-to-action buttons placed in more than just one user flow give users many opportunities to easily subscribe to Farfetch’s paid product and become VIPrivé members. These CTA buttons ensure higher conversion rates than a page without them by compelling or reminding users to immediately take action.',
+  },
+  {
+    id: 5,
     type: 'IMAGE',
     imageSource: {
       src: '/images/work-3/group-902.png',

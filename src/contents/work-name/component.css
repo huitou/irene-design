@@ -6,7 +6,7 @@
 }
 
 .workNameFrame {
-    padding: 2vw 5vw;
+    padding: 1vw 5vw;
 }
 
 .workName {
@@ -20,7 +20,6 @@
 }
 
 .companyName {
-    font-family: 'Crimson Text', serif;
     font-size: 22px;
     color: #ffffff;
 }
