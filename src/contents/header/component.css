@@ -29,6 +29,7 @@
 .menuItem {
     font-family: 'Crimson Text', serif;
     font-size: 20px;
+    font-weight: 400;
     color: #4f4e4e;
     cursor: pointer;
 }
