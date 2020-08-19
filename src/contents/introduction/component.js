@@ -71,10 +71,11 @@ class Introduction extends Component {
   }
 
   render() {
+    const { titleClassName } = this.props;
     return (
       <div className={introductionArea}>
         <div className={introductionFrame}>
-          <h3 className={title}>{this.getTitle()}</h3>
+          <h3 className={`${title} ${titleClassName}`}>{this.getTitle()}</h3>
           {this.contents()}
         </div>
       </div>
@@ -87,7 +88,12 @@ Introduction.propTypes = {
     string,
     arrayOf(string)
   ]).isRequired,
+  titleClassName: string,
   resources: arrayOf(object).isRequired,
+};
+
+Introduction.defaultProps = {
+  titleClassName: '',
 };
 
 export default Introduction;

@@ -8,6 +8,8 @@ import Solution from '../../contents/solution';
 import Feedback from '../../contents/feedback';
 import Learnings from '../../contents//learnings';
 
+import { title } from './component.css';
+
 const topImageSource = {
   src: '/images/work-3/group-814.png',
 };
@@ -113,7 +115,7 @@ class Work3Page extends Component {
         topRender={() => <TopContent work={work} company={company} imageSource={topImageSource} type={type} />}
         bodyRender={() => (
           <Fragment>
-            <Introduction titleText={titleText} resources={introductionResources} />
+            <Introduction titleText={titleText} titleClassName={title} resources={introductionResources} />
             <Challenge resources={challengeResources} />
             <Solution resources={solutionResources} />
             <Feedback feedbacks={feedbacks} />
