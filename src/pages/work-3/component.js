@@ -6,6 +6,7 @@ import Introduction from '../../contents/introduction';
 import Challenge from '../../contents/challenge';
 import Solution from '../../contents/solution';
 import Feedback from '../../contents/feedback';
+import Learnings from '../../contents//learnings';
 
 const topImageSource = {
   src: '/images/work-3/group-814.png',
@@ -116,6 +117,7 @@ class Work3Page extends Component {
             <Challenge resources={challengeResources} />
             <Solution resources={solutionResources} />
             <Feedback feedbacks={feedbacks} />
+            <Learnings resources={[]} />
           </Fragment>
         )}
       />

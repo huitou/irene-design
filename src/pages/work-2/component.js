@@ -6,6 +6,7 @@ import Introduction from '../../contents/introduction';
 import Challenge from '../../contents/challenge';
 import Solution from '../../contents/solution';
 import Feedback from '../../contents/feedback';
+import Learnings from '../../contents//learnings';
 
 const topImageSource = {
   src: '/images/work-3/group-814.png',
@@ -118,6 +119,22 @@ const feedbacks = [
   },
 ];
 
+const learningsResources = [
+  {
+    id: 1,
+    type: 'IMAGE',
+    imageSource: {
+      src: '/images/work-3/group-902.png',
+      alt: 'Education Platform',
+    },
+  },
+  {
+    id: 2,
+    type: 'PARAGRAPH',
+    text: 'There’s still a lot that can be improved this app, but I’m happy to have taken it a step in the right direction. If this was a longer internship, I would have really enjoyed ideating on new features and testing my assumptions. This would include researching user wants and needs, as well as challenges and frustrations in the problem space. I think it would also be valuable to work with development from the beginning of a project.',
+  },
+];
+
 class Work3Page extends Component {
   render() {
     return (
@@ -129,6 +146,7 @@ class Work3Page extends Component {
             <Challenge resources={challengeResources} />
             <Solution resources={solutionResources} />
             <Feedback feedbacks={feedbacks} />
+            <Learnings resources={learningsResources} />
           </Fragment>
         )}
       />

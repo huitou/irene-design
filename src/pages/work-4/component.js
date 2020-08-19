@@ -131,7 +131,7 @@ const learningsResources = [
   {
     id: 2,
     type: 'PARAGRAPH',
-    text: 'A design sprint allows the product team to quickly test out ideas in an Agile environment. I ran a modified sprint for a solo designer, and the GV sprint processes are slightly different on a team. For example, on Day 2, I would run through lightning demos with a team and discuss pros and cons of competitor designs. We would also vote on the solution sketches and decide on the storyboard. I’m excited to bring what I learned over to a team environment, and I feel comfortable working through the process. ',
+    text: 'A design sprint allows the product team to quickly test out ideas in an Agile environment. I ran a modified sprint for a solo designer, and the GV sprint processes are slightly different on a team. For example, on Day 2, I would run through lightning demos with a team and discuss pros and cons of competitor designs. We would also vote on the solution sketches and decide on the storyboard. I’m excited to bring what I learned over to a team environment, and I feel comfortable working through the process.',
   },
 ];
 
