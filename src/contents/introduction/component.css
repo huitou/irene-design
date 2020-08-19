@@ -13,7 +13,8 @@
     max-width: 660px;
     text-align: center;
     font-size: 35px;
-    line-height: 48px;
+    font-weight: normal;
+    line-height: 50px;
     color: #4f4e4e
 }
 
@@ -25,6 +26,8 @@
 .paragraph {
     padding: 15px 0;
     font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
     color: #4f4e4e
 }
 

@@ -22,12 +22,15 @@
 .feedbackContent {
     padding: 15px 0;
     font-size: 35px;
+    font-weight: 400;
+    line-height: 40px;
     color: #4f4e4e
 }
 
 .feedbacker {
     padding: 15px 0;
     font-size: 17px;
+    font-weight: 400;
     font-style: italic;
     color: #4f4e4e
 }
