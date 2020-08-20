@@ -27,7 +27,7 @@
     .imageFrame1 {
         position: relative;
         padding-top: 64.8256%;
-        background: linear-gradient(to bottom right, #B0BB82, #F4F5F2);
+        background: linear-gradient(to bottom right, #332e54, #e8e9eb);
         flex-grow: 1;
         flex-shrink: 1;
 
@@ -39,7 +39,7 @@
     .imageFrame2 {
         position: relative;
         padding-top: 64.8256%;
-        background-color: #ECBF2B;
+        background-color: #c4aabc;
         flex-grow: 1;
         flex-shrink: 1;
 
@@ -66,7 +66,7 @@
         position: relative;
         width: 80vw;
         padding-top: 64.8256%;
-        background: linear-gradient(to bottom right, #B0BB82, #F4F5F2);
+        background: linear-gradient(to bottom right, #332e54, #e8e9eb);
 
         display: flex;
         align-items: center;
@@ -77,7 +77,7 @@
         position: relative;
         width: 80vw;
         padding-top: 64.8256%;
-        background-color: #ECBF2B;
+        background-color: #c4aabc;
 
         display: flex;
         align-items: center;

@@ -106,7 +106,7 @@ class Images2 extends Component {
               </div>
               <img className={`${image1} ${!mouseLeaveImageFrame1 ? fadein : ''}`}
                 style={(!isImage1Visible || hoverOnImageFrame1) ? { display: 'none' } : {}}
-                src="/images/image-2.1.png"
+                src="/images/image-1.2.jpg"
                 alt="Music Stream Platform"
               />
             </div>
@@ -134,7 +134,7 @@ class Images2 extends Component {
               </div>
               <img className={`${image2} ${!mouseLeaveImageFrame2 ? fadein : ''}`}
                 style={(!isImage2Visible || hoverOnImageFrame2) ? { display: 'none' } : { display: 'none' }}
-                src="/images/image-2.2.png"
+                src="/images/image-2.2.jpg"
                 alt="eCommerce Website"
               />
             </div>
