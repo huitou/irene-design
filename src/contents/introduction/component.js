@@ -5,6 +5,7 @@ import {
   introductionArea,
   introductionFrame,
   textFrame,
+  titleFrame,
   title,
   paragraph,
   imageArea,
@@ -75,7 +76,9 @@ class Introduction extends Component {
     return (
       <div className={introductionArea}>
         <div className={introductionFrame}>
-          <h3 className={`${title} ${titleClassName}`}>{this.getTitle()}</h3>
+          <div className={titleFrame}>
+            <h3 className={`${title} ${titleClassName}`}>{this.getTitle()}</h3>
+          </div>
           {this.contents()}
         </div>
       </div>
