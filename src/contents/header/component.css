@@ -7,17 +7,17 @@
 
 .logoFrame {
     width: 50%;
-    padding: 5vw;
+    padding: 90px 7% 0;
 }
 
 .logo {
     width: 200px;
-    height: 24px;
+    height: 33px;
 }
 
 .menuFrame {
     width: 50%;
-    padding: 5vw;
+    padding: 90px 7% 0;
 }
 
 .menu {
@@ -30,7 +30,7 @@
     font-family: 'Crimson Text', serif;
     font-size: 20px;
     font-weight: 400;
-    color: #4f4e4e;
+    color: #484747;
     cursor: pointer;
 }
 

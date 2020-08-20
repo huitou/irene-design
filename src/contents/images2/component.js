@@ -11,6 +11,8 @@ import {
   image2,
   fadein,
   workPanel,
+  topPart,
+  bottomPart,
   type,
   name,
   description,
@@ -92,15 +94,19 @@ class Images2 extends Component {
                 style={(!isImage1Visible || !hoverOnImageFrame1) ? { display: 'none' } : {}}
               >
                 <div className={workPanel}>
-                  <div className={type}>E-commerce website</div>
-                  <div className={name}>House2Home</div>
-                  <div className={description}>A unique website that empowers customers to shop products by mood.</div>
-                  <a className={link} href="/work-3">View the case study</a>
+                  <div className={topPart}>
+                    <div className={type}>Mobile App Redesign</div>
+                    <div className={name}>KidsClub</div>
+                    <div className={description}>The reimagining of a mobile app designed to encourage your little ones to live a healthier lifestyle.</div>
+                  </div>
+                  <div className={bottomPart}>
+                    <a className={link} href="/work-3">View the case study</a>
+                  </div>
                 </div>
               </div>
               <img className={`${image1} ${!mouseLeaveImageFrame1 ? fadein : ''}`}
                 style={(!isImage1Visible || hoverOnImageFrame1) ? { display: 'none' } : {}}
-                src="/images/image-2.1.png"
+                src="/images/image-1.2.jpg"
                 alt="Music Stream Platform"
               />
             </div>
@@ -113,18 +119,22 @@ class Images2 extends Component {
               onMouseLeave={this.onMouseLeaveImageFrame2}
             >
               <div className={image2}
-                style={(!isImage2Visible || !hoverOnImageFrame2) ? { display: 'none' } : {}}
+                style={(!isImage2Visible || !hoverOnImageFrame2) ? {} : {}}
               >
                 <div className={workPanel}>
-                  <div className={type}>E-commerce website</div>
-                  <div className={name}>House2Home</div>
-                  <div className={description}>A unique website that empowers customers to shop products by mood.</div>
-                  <a className={link} href="/work-4">View the case study</a>
+                  <div className={topPart}>
+                    <div className={type}></div>
+                    <div className={name}>New Projects Coming Up Soon!</div>
+                    <div className={description}></div>
+                  </div>
+                  <div className={bottomPart}>
+                    <a className={link} href="/work-4"></a>
+                    </div>
                 </div>
               </div>
               <img className={`${image2} ${!mouseLeaveImageFrame2 ? fadein : ''}`}
-                style={(!isImage2Visible || hoverOnImageFrame2) ? { display: 'none' } : {}}
-                src="/images/image-2.2.png"
+                style={(!isImage2Visible || hoverOnImageFrame2) ? { display: 'none' } : { display: 'none' }}
+                src="/images/image-2.2.jpg"
                 alt="eCommerce Website"
               />
             </div>

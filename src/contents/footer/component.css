@@ -5,12 +5,12 @@
 }
 
 .contactFrame {
-    padding: 5vw;
+    padding: 80px 7%;
 }
 
 .contact {
     font-size: 18px;
-    color: #4f4e4e;
+    color: #484747;
 }
 
 .contactItem {
@@ -18,11 +18,12 @@
 }
 
 .socialFrame {
-    padding: 5vw;
+    padding: 80px 7%;
 }
 
 .social {
     padding: 0px;
+    display: flex;
 }
 
 .icon {

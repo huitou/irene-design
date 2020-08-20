@@ -4,16 +4,18 @@
 }
 
 .titleFrame {
-    padding: 0 5vw;
+    padding: 0 7%;
 }
 
 .title {
-    font-size: 43.5px;
-    color: #4f4e4e;
+    width: 80%;
+    font-size: 40px;
+    color: #484747;
     line-height: 55px;
-    padding-bottom: 92px;
+    padding: 50px 0 80px;
+    margin: 0;
 }
 
 .titleBold {
-    font-weight: bold;
+    font-weight: 400;
 }

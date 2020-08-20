@@ -11,6 +11,8 @@ import {
   image2,
   fadein,
   workPanel,
+  topPart,
+  bottomPart,
   type,
   name,
   description,
@@ -92,15 +94,19 @@ class Images1 extends Component {
                 style={(!isImage1Visible || !hoverOnImageFrame1) ? { display: 'none' } : {}}
               >
                 <div className={workPanel}>
-                  <div className={type}>E-commerce website</div>
-                  <div className={name}>House2Home</div>
-                  <div className={description}>A unique website that empowers customers to shop products by mood.</div>
-                  <a className={link} href="/work-1">View the case study</a>
+                  <div className={topPart}>
+                    <div className={type}>GV Design Sprint</div>
+                    <div className={name}>Skincare Quiz</div>
+                    <div className={description}>A quiz that makes finding the right products for your skin’s needs easy (and puppy-licious).</div>
+                  </div>
+                  <div className={bottomPart}>
+                    <a className={link} href="/work-1">View the case study</a>
+                  </div>
                 </div>
               </div>
               <img className={`${image1} ${!mouseLeaveImageFrame1 ? fadein : ''}`}
                 style={(!isImage1Visible || hoverOnImageFrame1) ? { display: 'none' } : {}}
-                src="/images/image-1.1.png"
+                src="/images/image-2.2.jpg"
                 alt="Food Sharing App - Leftlovers"
               />
             </div>
@@ -116,15 +122,19 @@ class Images1 extends Component {
                 style={(!isImage2Visible || !hoverOnImageFrame2) ? { display: 'none' } : {}}
               >
                 <div className={workPanel}>
-                  <div className={type}>E-commerce website</div>
-                  <div className={name}>House2Home</div>
-                  <div className={description}>A unique website that empowers customers to shop products by mood.</div>
-                  <a className={link} href="/work-2">View the case study</a>
+                  <div className={topPart}>
+                    <div className={type}>Free to Paid Conversion</div>
+                    <div className={name}>VIPrivé</div>
+                    <div className={description}>A members-only luxury digital destination for Farfetch’s customers.</div>
+                  </div>
+                  <div className={bottomPart}>
+                    <a className={link} href="/work-2">View the case study</a>
+                  </div>
                 </div>
               </div>
               <img className={`${image2} ${!mouseLeaveImageFrame2 ? fadein : ''}`}
                 style={(!isImage2Visible || hoverOnImageFrame2) ? { display: 'none' } : {}}
-                src="/images/image-1.2.png"
+                src="/images/image-2.1.jpg"
                 alt="Education Platform"
               />
             </div>

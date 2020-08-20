@@ -7,7 +7,7 @@
 
 @media only screen and (min-width: 769px) {
     .imageArea1 {
-        padding-left: 5vw;
+        padding-left: 7%;
         flex-grow: 1;
 
         display: flex;
@@ -16,7 +16,7 @@
     }
 
     .imageArea2 {
-        padding-right: 5vw;
+        padding-right: 7%;
         flex-grow: 1;
 
         display: flex;
@@ -26,8 +26,8 @@
 
     .imageFrame1 {
         position: relative;
-        padding-top: 71.3012%;
-        background-color: #F4D9AE;
+        padding-top: 64.8256%;
+        background-color: #f27e3c;
         flex-grow: 1;
         flex-shrink: 1;
 
@@ -38,8 +38,8 @@
 
     .imageFrame2 {
         position: relative;
-        padding-top: 71.3012%;
-        background: linear-gradient(to bottom right, #332E54, #E8E9EB);
+        padding-top: 64.8256%;
+        background: linear-gradient(to bottom right, #f5c069, #5d98ee);
         flex-grow: 1;
         flex-shrink: 1;
 
@@ -65,8 +65,8 @@
     .imageFrame1 {
         position: relative;
         width: 80vw;
-        padding-top: 71.3012%;
-        background-color: #F4D9AE;
+        padding-top: 64.8256%;
+        background-color: #f27e3c;
 
         display: flex;
         align-items: center;
@@ -76,8 +76,8 @@
     .imageFrame2 {
         position: relative;
         width: 80vw;
-        padding-top: 71.3012%;
-        background: linear-gradient(to bottom right, #332E54, #E8E9EB);
+        padding-top: 64.8256%;
+        background: linear-gradient(to bottom right, #f5c069, #5d98ee);
 
         display: flex;
         align-items: center;
@@ -117,17 +117,25 @@
 }
 
 .workPanel {
-    padding: 0 7.5%;
+    padding: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+.topPart {
+    padding: 6% 6% 0 6%;
+}
+
+.bottomPart {
+    padding: 0 6% 6% 6%;
+}
+
 .type {
-    padding-top: 10%;
+    margin-bottom: 9px;
     flex-grow: 1;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #ffffff;
 }
@@ -141,16 +149,17 @@
 .description {
     flex-grow: 4;
     height: 120px;
-    width: 85%;
-    font-size: 30px;
+    margin-top: 6.1%;
+    width: 75%;
+    font-size: 29px;
     font-weight: 400;
     color: rgba(255, 255, 255, .75);
-    line-height: 35px;
+    line-height: 38px;
 }
 .link {
-    padding-bottom: 7.5%;
-    flex-grow: 1;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
+    text-underline-position: under;
+    line-height: 30px;
     color: #ffffff;
 }
