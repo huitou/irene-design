@@ -95,9 +95,9 @@ class Images1 extends Component {
               >
                 <div className={workPanel}>
                   <div className={topPart}>
-                    <div className={type}>E-commerce website</div>
-                    <div className={name}>House2Home</div>
-                    <div className={description}>A unique website that empowers customers to shop products by mood.</div>
+                    <div className={type}>GV Design Sprint</div>
+                    <div className={name}>Skincare Quiz</div>
+                    <div className={description}>A quiz that makes finding the right products for your skin’s needs easy (and puppy-licious).</div>
                   </div>
                   <div className={bottomPart}>
                     <a className={link} href="/work-1">View the case study</a>
@@ -123,9 +123,9 @@ class Images1 extends Component {
               >
                 <div className={workPanel}>
                   <div className={topPart}>
-                    <div className={type}>E-commerce website</div>
-                    <div className={name}>House2Home</div>
-                    <div className={description}>A unique website that empowers customers to shop products by mood.</div>
+                    <div className={type}>Free to Paid Conversion</div>
+                    <div className={name}>VIPrivé</div>
+                    <div className={description}>A members-only luxury digital destination for Farfetch’s customers.</div>
                   </div>
                   <div className={bottomPart}>
                     <a className={link} href="/work-2">View the case study</a>
