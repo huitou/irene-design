@@ -7,9 +7,10 @@ import Challenge from '../../contents/challenge';
 import Solution from '../../contents/solution';
 import Feedback from '../../contents/feedback';
 import Learnings from '../../contents//learnings';
+import Footer from '../../contents/footer';
 
 const topImageSource = {
-  src: '/images/work-3/group-814.png',
+  src: '/images/work-1/1.Skincare-quiz-cover-min.jpg',
 };
 const work = 'Skincare Quiz';
 const company = 'GV Design Sprint';
@@ -26,8 +27,8 @@ const introductionResources = [
     id: 2,
     type: 'IMAGE',
     imageSource: {
-      src: '/images/work-3/group-900.png',
-      alt: 'Education Platform',
+      src: '/images/work-1/2.Mockup-of-landing-page-min.jpg',
+      alt: 'Mockup of landing page',
     },
   },
 ];
@@ -52,8 +53,8 @@ const challengeResources = [
     id: 4,
     type: 'IMAGE',
     imageSource: {
-      src: '/images/work-3/group-901.png',
-      alt: 'Education Platform',
+      src: '/images/work-1/3.Images-of-puppies-used-for-this-project-min.jpg',
+      alt: 'Images of puppies used for this project',
     },
   },
 ];
@@ -68,16 +69,8 @@ const solutionResources = [
     id: 2,
     type: 'IMAGE',
     imageSource: {
-      src: '/images/work-3/group-902.png',
-      alt: 'Education Platform',
-    },
-  },
-  {
-    id: 3,
-    type: 'IMAGE',
-    imageSource: {
-      src: '/images/work-3/group-902.png',
-      alt: 'Education Platform',
+      src: '/images/work-1/4.Mockups-of-skincare-quiz-page-screens-min.jpg',
+      alt: 'Mockups of skincare quiz page screens',
     },
   },
   {
@@ -94,8 +87,8 @@ const solutionResources = [
     id: 6,
     type: 'IMAGE',
     imageSource: {
-      src: '/images/work-3/group-902.png',
-      alt: 'Education Platform',
+      src: '/images/work-1/5.Mockup-of-skincare-quiz-page-screen-min.jpg',
+      alt: 'Mockup of skincare quiz page screen',
     },
   },
 ];
@@ -124,8 +117,8 @@ const learningsResources = [
     id: 1,
     type: 'IMAGE',
     imageSource: {
-      src: '/images/work-3/group-902.png',
-      alt: 'Education Platform',
+      src: "/images/work-1/6.Image-of-Curology's-logo-min.jpg",
+      alt: "Image of Curology's logo",
     },
   },
   {
@@ -149,6 +142,7 @@ class Work4Page extends Component {
             <Learnings resources={learningsResources} />
           </Fragment>
         )}
+        bottomRender={() => (<Footer />)}
       />
     );
   }

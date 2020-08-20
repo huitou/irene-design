@@ -7,6 +7,7 @@ import Challenge from '../../contents/challenge';
 import Solution from '../../contents/solution';
 import Feedback from '../../contents/feedback';
 import Learnings from '../../contents//learnings';
+import Footer from '../../contents/footer';
 
 import { title } from './component.css';
 
@@ -122,6 +123,7 @@ class Work3Page extends Component {
             <Learnings resources={[]} />
           </Fragment>
         )}
+        bottomRender={() => (<Footer />)}
       />
     );
   }

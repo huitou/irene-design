@@ -7,6 +7,7 @@ import Challenge from '../../contents/challenge';
 import Solution from '../../contents/solution';
 import Feedback from '../../contents/feedback';
 import Learnings from '../../contents//learnings';
+import Footer from '../../contents/footer';
 
 const topImageSource = {
   src: '/images/work-3/group-814.png',
@@ -149,6 +150,7 @@ class Work3Page extends Component {
             <Learnings resources={learningsResources} />
           </Fragment>
         )}
+        bottomRender={() => (<Footer />)}
       />
     );
   }
