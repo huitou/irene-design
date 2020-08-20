@@ -11,6 +11,8 @@ import {
   image2,
   fadein,
   workPanel,
+  topPart,
+  bottomPart,
   type,
   name,
   description,
@@ -92,10 +94,14 @@ class Images1 extends Component {
                 style={(!isImage1Visible || !hoverOnImageFrame1) ? { display: 'none' } : {}}
               >
                 <div className={workPanel}>
-                  <div className={type}>E-commerce website</div>
-                  <div className={name}>House2Home</div>
-                  <div className={description}>A unique website that empowers customers to shop products by mood.</div>
-                  <a className={link} href="/work-1">View the case study</a>
+                  <div className={topPart}>
+                    <div className={type}>E-commerce website</div>
+                    <div className={name}>House2Home</div>
+                    <div className={description}>A unique website that empowers customers to shop products by mood.</div>
+                  </div>
+                  <div className={bottomPart}>
+                    <a className={link} href="/work-1">View the case study</a>
+                  </div>
                 </div>
               </div>
               <img className={`${image1} ${!mouseLeaveImageFrame1 ? fadein : ''}`}
@@ -116,10 +122,14 @@ class Images1 extends Component {
                 style={(!isImage2Visible || !hoverOnImageFrame2) ? { display: 'none' } : {}}
               >
                 <div className={workPanel}>
-                  <div className={type}>E-commerce website</div>
-                  <div className={name}>House2Home</div>
-                  <div className={description}>A unique website that empowers customers to shop products by mood.</div>
-                  <a className={link} href="/work-2">View the case study</a>
+                  <div className={topPart}>
+                    <div className={type}>E-commerce website</div>
+                    <div className={name}>House2Home</div>
+                    <div className={description}>A unique website that empowers customers to shop products by mood.</div>
+                  </div>
+                  <div className={bottomPart}>
+                    <a className={link} href="/work-2">View the case study</a>
+                  </div>
                 </div>
               </div>
               <img className={`${image2} ${!mouseLeaveImageFrame2 ? fadein : ''}`}

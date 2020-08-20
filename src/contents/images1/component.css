@@ -117,17 +117,25 @@
 }
 
 .workPanel {
-    padding: 0 7.5%;
+    padding: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+.topPart {
+    padding: 6% 6% 0 6%;
+}
+
+.bottomPart {
+    padding: 0 6% 6% 6%;
+}
+
 .type {
-    padding-top: 10%;
+    margin-bottom: 9px;
     flex-grow: 1;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #ffffff;
 }
@@ -141,17 +149,17 @@
 .description {
     flex-grow: 4;
     height: 120px;
-    width: 85%;
-    font-size: 30px;
+    margin-top: 6.1%;
+    width: 75%;
+    font-size: 29px;
     font-weight: 400;
     color: rgba(255, 255, 255, .75);
-    line-height: 35px;
+    line-height: 38px;
 }
 .link {
-    padding-bottom: 7.5%;
-    flex-grow: 1;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
     text-underline-position: under;
+    line-height: 30px;
     color: #ffffff;
 }
