@@ -23,6 +23,7 @@
 
 .social {
     padding: 0px;
+    display: flex;
 }
 
 .icon {
