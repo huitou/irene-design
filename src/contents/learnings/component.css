@@ -10,7 +10,8 @@
 }
 
 .title {
-    padding: 20px 0;
+    padding: 20px 0 50px;
+    margin: 0;
     text-align: left;
     font-size: 18px;
     font-weight: 700;
@@ -23,7 +24,8 @@
 }
 
 .paragraph {
-    padding: 15px 0;
+    padding: 0 0 50px;
+    margin: 0;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;

@@ -15,16 +15,16 @@ class App extends Component {
       <Router>
         <Switch>
           <Route path="/work-1">
-            <Work1Page />
+            <Work4Page />
           </Route>
           <Route path="/work-2">
-            <Work2Page />
-          </Route>
-          <Route path="/work-3">
             <Work3Page />
           </Route>
+          <Route path="/work-3">
+            <Work2Page />
+          </Route>
           <Route path="/work-4">
-            <Work4Page />
+            <Work1Page />
           </Route>
           <Route path="/">
             <MainPage />

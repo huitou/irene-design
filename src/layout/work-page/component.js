@@ -29,7 +29,7 @@ WorkPageLayout.propTypes = {
 WorkPageLayout.defaultProps = {
   topRender: () => (<div>Top area placeholder</div>),
   bodyRender: () => (<div>Body area placeholder</div>),
-  bottomRender: () => (<div></div>),
+  bottomRender: () => (<div>Bottom area placeholder</div>),
 };
 
 export default WorkPageLayout;
