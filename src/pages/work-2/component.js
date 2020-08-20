@@ -10,7 +10,7 @@ import Learnings from '../../contents//learnings';
 import Footer from '../../contents/footer';
 
 const topImageSource = {
-  src: '/images/work-3/group-814.png',
+  src: '/images/work-2/1.Kids-Club-Case-Study-Cover-min.jpg',
 };
 const work = 'OKids Club';
 const company = 'Mobile App Redesign';
@@ -32,8 +32,8 @@ const introductionResources = [
     id: 3,
     type: 'IMAGE',
     imageSource: {
-      src: '/images/work-3/group-900.png',
-      alt: 'Education Platform',
+      src: '/images/work-2/2.Inspiration-Images-min.jpg',
+      alt: 'Inspiration images',
     },
   },
   {
@@ -45,8 +45,8 @@ const introductionResources = [
     id: 5,
     type: 'IMAGE',
     imageSource: {
-      src: '/images/work-3/group-900.png',
-      alt: 'Education Platform',
+      src: '/images/work-2/3.Mockups-of-mobile-screens-min.jpg',
+      alt: 'Mockups of mobile screens',
     },
   },
 ];
@@ -66,8 +66,8 @@ const challengeResources = [
     id: 3,
     type: 'IMAGE',
     imageSource: {
-      src: '/images/work-3/group-901.png',
-      alt: 'Education Platform',
+      src: '/images/work-2/4.Mockup-of-Mobile-Screen-min.jpg',
+      alt: 'Mockup of Mobile Screen',
     },
   },
 ];
@@ -84,19 +84,11 @@ const solutionResources = [
     text: 'For the illustrations, we created a card for each event as a placeholder for the illustrator. We designed for each card a different background featuring liquid and smooth shapes, which communicate a sense of ease and safety and are also reminiscent of juices and smoothies. These patterned backgrounds bring consistency and harmony to the interface, and will help the illustrator more easily interpret the product’s overall visual style.',
   },
   {
-    id: 3,
-    type: 'VIDEO',
-    videoSource: {
-      src: '/videos/vip-membership-video.mov',
-      type: 'video/mp4',
-    },
-  },
-  {
     id: 4,
     type: 'IMAGE',
     imageSource: {
-      src: '/images/work-3/group-902.png',
-      alt: 'Education Platform',
+      src: '/images/work-2/5.Mockup-of-mobile-screen-min.jpg',
+      alt: 'Mockup of mobile screen',
     },
   },
 ];
@@ -125,8 +117,8 @@ const learningsResources = [
     id: 1,
     type: 'IMAGE',
     imageSource: {
-      src: '/images/work-3/group-902.png',
-      alt: 'Education Platform',
+      src: '/images/work-2/6.Leranings-min.jpg',
+      alt: 'Leranings',
     },
   },
   {

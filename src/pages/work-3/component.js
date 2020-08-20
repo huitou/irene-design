@@ -12,7 +12,7 @@ import Footer from '../../contents/footer';
 import { title } from './component.css';
 
 const topImageSource = {
-  src: '/images/work-3/group-814.png',
+  src: '/images/work-3/1.VIprive-Cover-min.jpg',
 };
 const work = 'VIPrivé';
 const company = 'Free to Paid Conversion';
@@ -29,8 +29,8 @@ const introductionResources = [
     id: 3,
     type: 'IMAGE',
     imageSource: {
-      src: '/images/work-3/group-900.png',
-      alt: 'Education Platform',
+      src: '/images/work-3/2.Mockup-of-landing-page-min.jpg',
+      alt: 'Mockup of landing page',
     },
   },
 ];
@@ -50,8 +50,8 @@ const challengeResources = [
     id: 3,
     type: 'IMAGE',
     imageSource: {
-      src: '/images/work-3/group-901.png',
-      alt: 'Education Platform',
+      src: '/images/work-3/3.Images-of-shoes-used-for-this-project-min.jpg',
+      alt: 'Images of shoes used for this project',
     },
   },
 ];
@@ -84,8 +84,8 @@ const solutionResources = [
     id: 5,
     type: 'IMAGE',
     imageSource: {
-      src: '/images/work-3/group-902.png',
-      alt: 'Education Platform',
+      src: '/images/work-3/4.Mockup-of-pop-up-min.jpg',
+      alt: 'Mockup of pop-up',
     },
   },
 ];
