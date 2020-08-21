@@ -92,20 +92,20 @@ const solutionResources = [
 
 const feedbacks = [
   {
-    content: 'Very fun to use and beautiful to see.',
-    feedbacker: '— Francesca, 25',
+    content: 'Informative and pleasing to the eye.',
+    feedbacker: '— Cecilia, 27',
   },
   {
-    content: 'I really like the smooth horizontal navigation.',
+    content: 'Simple yet really effective.',
     feedbacker: '— Fuhang, 55',
   },
   {
-    content: 'Such beautiful images and original concept.',
-    feedbacker: '— Lorenzo, 20',
+    content: 'Very elegant looking.',
+    feedbacker: '— Robin, 21',
   },
   {
-    content: 'Unlike anything I’ve ever seen!',
-    feedbacker: '— Frances, 45',
+    content: '',
+    feedbacker: '',
   },
 ];
 
