@@ -12,7 +12,7 @@ import Footer from '../../contents/footer';
 const topImageSource = {
   src: '/images/work-2/1.Kids-Club-Case-Study-Cover-min.jpg',
 };
-const work = 'OKids Club';
+const work = 'KidsClub';
 const company = 'Mobile App Redesign';
 const type = '';
 
@@ -113,14 +113,7 @@ const feedbacks = [
 ];
 
 const learningsResources = [
-  {
-    id: 1,
-    type: 'IMAGE',
-    imageSource: {
-      src: '/images/work-2/6.Leranings-min.jpg',
-      alt: 'Leranings',
-    },
-  },
+  undefined,
   {
     id: 2,
     type: 'PARAGRAPH',
@@ -138,7 +131,7 @@ class Work3Page extends Component {
             <Introduction titleText={titleText} resources={introductionResources} />
             <Challenge resources={challengeResources} />
             <Solution resources={solutionResources} />
-            <Feedback feedbacks={feedbacks} />
+            {/* <Feedback feedbacks={feedbacks} /> */}
             <Learnings resources={learningsResources} />
           </Fragment>
         )}
