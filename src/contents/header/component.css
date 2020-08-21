@@ -30,7 +30,7 @@
     font-family: 'Crimson Text', serif;
     font-size: 20px;
     font-weight: 400;
-    color: #484747;
+    color: rgba(71, 72, 72, .5);
     cursor: pointer;
 }
 
@@ -44,8 +44,7 @@
 
 .inactive {
     cursor: default;
-    text-decoration: underline;
-    text-underline-position: under;
+    color: rgba(71, 72, 72, 1);
 }
 
 .dark {
