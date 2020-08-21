@@ -38,7 +38,7 @@
     .imageFrame2 {
         position: relative;
         padding-top: 64.8256%;
-        background: linear-gradient(to bottom right, #f5c069, #5d98ee);
+        background: #a8a9d5;
         flex-grow: 1;
         flex-shrink: 1;
 
@@ -75,7 +75,7 @@
         position: relative;
         width: 80vw;
         padding-top: 64.8256%;
-        background: linear-gradient(to bottom right, #f5c069, #5d98ee);
+        background: #a8a9d5;
 
         display: flex;
         align-items: center;

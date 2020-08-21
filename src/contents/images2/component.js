@@ -137,7 +137,7 @@ class Images2 extends Component {
                 <div className={workPanel}>
                   <div className={topPart}>
                     <div className={type}></div>
-                    <div className={name}>New Projects Coming Up Soon!</div>
+                    <div className={name}>New Projects Coming Up Soon</div>
                     <div className={description}></div>
                   </div>
                   <div className={bottomPart}>
