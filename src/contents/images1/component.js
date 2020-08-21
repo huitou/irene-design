@@ -7,9 +7,11 @@ import {
   imageArea2,
   imageFrame1,
   imageFrame2,
+  background,
   image1,
   image2,
-  fadein,
+  fadeinBackground,
+  fadeinOpacity,
   workPanel,
   topPart,
   bottomPart,
@@ -74,8 +76,8 @@ class Images1 extends Component {
 
   render() {
     const {
-      isImage1Visible,
-      isImage2Visible,
+      // isImage1Visible,
+      // isImage2Visible,
       hoverOnImageFrame1,
       hoverOnImageFrame2,
       mouseLeaveImageFrame1,
@@ -90,25 +92,36 @@ class Images1 extends Component {
               onMouseEnter={this.onMouseEnterImageFrame1}
               onMouseLeave={this.onMouseLeaveImageFrame1}
             >
-              <div className={image1}
-                style={(!isImage1Visible || !hoverOnImageFrame1) ? { display: 'none' } : {}}
+              <img className={image1}
+                src="/images/image-2.2.jpg"
+                alt="Food Sharing App - Leftlovers"
+              />
+              <div className={image1}>
+                <div className={workPanel}>
+                  <div className={topPart}>
+                    <div className={type}>GV Design Sprint</div>
+                    <div className={name}>Skincare Quiz</div>
+                    {/* <div className={description}>A quiz that makes finding the right products for your skin’s needs easy (and puppy-licious).</div> */}
+                  </div>
+                  <div className={bottomPart}>
+                    {/* <a className={link} href="/work-1">View the case study</a> */}
+                  </div>
+                </div>
+              </div>
+              <div className={`${image1} ${background} ${fadeinBackground}`}
+                style={(/* !isImage1Visible || */ !hoverOnImageFrame1) ? { display: 'none' } : {}}
               >
                 <div className={workPanel}>
                   <div className={topPart}>
                     <div className={type}>GV Design Sprint</div>
                     <div className={name}>Skincare Quiz</div>
-                    <div className={description}>A quiz that makes finding the right products for your skin’s needs easy (and puppy-licious).</div>
+                    <div className={`${description} ${fadeinOpacity}`}>A quiz that makes finding the right products for your skin’s needs easy (and puppy-licious).</div>
                   </div>
                   <div className={bottomPart}>
-                    <a className={link} href="/work-1">View the case study</a>
+                    <a className={`${link} ${fadeinOpacity}`} href="/work-1">View the case study</a>
                   </div>
                 </div>
               </div>
-              <img className={`${image1} ${!mouseLeaveImageFrame1 ? fadein : ''}`}
-                style={(!isImage1Visible || hoverOnImageFrame1) ? { display: 'none' } : {}}
-                src="/images/image-2.2.jpg"
-                alt="Food Sharing App - Leftlovers"
-              />
             </div>
           </VisibilitySensor>
         </div>
@@ -118,25 +131,36 @@ class Images1 extends Component {
               onMouseEnter={this.onMouseEnterImageFrame2}
               onMouseLeave={this.onMouseLeaveImageFrame2}
             >
-              <div className={image2}
-                style={(!isImage2Visible || !hoverOnImageFrame2) ? { display: 'none' } : {}}
+              <img className={image2}
+                src="/images/image-2.1.jpg"
+                alt="Education Platform"
+              />
+              <div className={image2}>
+                <div className={workPanel}>
+                  <div className={topPart}>
+                    <div className={type}>Free to Paid Conversion</div>
+                    <div className={name}>VIPrivé</div>
+                    {/* <div className={description}>A members-only luxury digital destination for Farfetch’s customers.</div> */}
+                  </div>
+                  <div className={bottomPart}>
+                    {/* <a className={link} href="/work-2">View the case study</a> */}
+                  </div>
+                </div>
+              </div>
+              <div className={`${image2} ${background} ${fadeinBackground}`}
+                style={(/* !isImage2Visible || */ !hoverOnImageFrame2) ? { display: 'none' } : {}}
               >
                 <div className={workPanel}>
                   <div className={topPart}>
                     <div className={type}>Free to Paid Conversion</div>
                     <div className={name}>VIPrivé</div>
-                    <div className={description}>A members-only luxury digital destination for Farfetch’s customers.</div>
+                    <div className={`${description} ${fadeinOpacity}`}>A members-only luxury digital destination for Farfetch’s customers.</div>
                   </div>
                   <div className={bottomPart}>
-                    <a className={link} href="/work-2">View the case study</a>
+                    <a className={`${link} ${fadeinOpacity}`} href="/work-2">View the case study</a>
                   </div>
                 </div>
               </div>
-              <img className={`${image2} ${!mouseLeaveImageFrame2 ? fadein : ''}`}
-                style={(!isImage2Visible || hoverOnImageFrame2) ? { display: 'none' } : {}}
-                src="/images/image-2.1.jpg"
-                alt="Education Platform"
-              />
             </div>
           </VisibilitySensor>
         </div>

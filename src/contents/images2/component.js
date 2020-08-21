@@ -7,9 +7,11 @@ import {
   imageArea2,
   imageFrame1,
   imageFrame2,
+  background,
   image1,
   image2,
-  fadein,
+  fadeinBackground,
+  fadeinOpacity,
   workPanel,
   topPart,
   bottomPart,
@@ -74,8 +76,8 @@ class Images2 extends Component {
 
   render() {
     const {
-      isImage1Visible,
-      isImage2Visible,
+      // isImage1Visible,
+      // isImage2Visible,
       hoverOnImageFrame1,
       hoverOnImageFrame2,
       mouseLeaveImageFrame1,
@@ -90,25 +92,36 @@ class Images2 extends Component {
               onMouseEnter={this.onMouseEnterImageFrame1}
               onMouseLeave={this.onMouseLeaveImageFrame1}
             >
-              <div className={image1}
-                style={(!isImage1Visible || !hoverOnImageFrame1) ? { display: 'none' } : {}}
+              <img className={image1}
+                src="/images/image-1.2.jpg"
+                alt="Music Stream Platform"
+              />
+              <div className={image1}>
+                <div className={workPanel}>
+                  <div className={topPart}>
+                    <div className={type}>Mobile App Redesign</div>
+                    <div className={name}>KidsClub</div>
+                    {/* <div className={description}>The reimagining of a mobile app designed to encourage your little ones to live a healthier lifestyle.</div> */}
+                  </div>
+                  <div className={bottomPart}>
+                    {/* <a className={link} href="/work-3">View the case study</a> */}
+                  </div>
+                </div>
+              </div>
+              <div className={`${image1} ${background} ${fadeinBackground}`}
+                style={(/* !isImage1Visible || */ !hoverOnImageFrame1) ? { display: 'none' } : {}}
               >
                 <div className={workPanel}>
                   <div className={topPart}>
                     <div className={type}>Mobile App Redesign</div>
                     <div className={name}>KidsClub</div>
-                    <div className={description}>The reimagining of a mobile app designed to encourage your little ones to live a healthier lifestyle.</div>
+                    <div className={`${description} ${fadeinOpacity}`}>The reimagining of a mobile app designed to encourage your little ones to live a healthier lifestyle.</div>
                   </div>
                   <div className={bottomPart}>
-                    <a className={link} href="/work-3">View the case study</a>
+                    <a className={`${link} ${fadeinOpacity}`} href="/work-3">View the case study</a>
                   </div>
                 </div>
               </div>
-              <img className={`${image1} ${!mouseLeaveImageFrame1 ? fadein : ''}`}
-                style={(!isImage1Visible || hoverOnImageFrame1) ? { display: 'none' } : {}}
-                src="/images/image-1.2.jpg"
-                alt="Music Stream Platform"
-              />
             </div>
           </VisibilitySensor>
         </div>
@@ -119,12 +132,12 @@ class Images2 extends Component {
               onMouseLeave={this.onMouseLeaveImageFrame2}
             >
               <div className={image2}
-                style={(!isImage2Visible || !hoverOnImageFrame2) ? {} : {}}
+                style={(/* !isImage2Visible || */ !hoverOnImageFrame2) ? {} : {}}
               >
                 <div className={workPanel}>
                   <div className={topPart}>
                     <div className={type}></div>
-                    <div className={name}>New Projects Coming Up Soon!</div>
+                    <div className={name}>New Projects Coming Up Soon</div>
                     <div className={description}></div>
                   </div>
                   <div className={bottomPart}>
@@ -132,11 +145,25 @@ class Images2 extends Component {
                     </div>
                 </div>
               </div>
-              <img className={`${image2} ${!mouseLeaveImageFrame2 ? fadein : ''}`}
-                style={(!isImage2Visible || hoverOnImageFrame2) ? { display: 'none' } : { display: 'none' }}
+              <img className={`${image2} ${!mouseLeaveImageFrame2 ? fadeinOpacity : ''}`}
+                style={(/* !isImage2Visible || */ hoverOnImageFrame2) ? { display: 'none' } : { display: 'none' }}
                 src="/images/image-2.2.jpg"
                 alt="eCommerce Website"
               />
+              <div className={image2}
+                style={(/* !isImage2Visible || */ hoverOnImageFrame2) ? {} : {}}
+              >
+                <div className={workPanel}>
+                  <div className={topPart}>
+                    <div className={type}></div>
+                    {/* <div className={name}>New Projects Coming Up Soon!</div> */}
+                    <div className={description}></div>
+                  </div>
+                  <div className={bottomPart}>
+                    {/* <a className={link} href="/work-4"></a> */}
+                    </div>
+                </div>
+              </div>
             </div>
           </VisibilitySensor>
         </div>
