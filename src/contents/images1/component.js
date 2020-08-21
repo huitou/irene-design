@@ -74,8 +74,8 @@ class Images1 extends Component {
 
   render() {
     const {
-      isImage1Visible,
-      isImage2Visible,
+      // isImage1Visible,
+      // isImage2Visible,
       hoverOnImageFrame1,
       hoverOnImageFrame2,
       mouseLeaveImageFrame1,
@@ -91,7 +91,7 @@ class Images1 extends Component {
               onMouseLeave={this.onMouseLeaveImageFrame1}
             >
               <div className={image1}
-                style={(!isImage1Visible || !hoverOnImageFrame1) ? { display: 'none' } : {}}
+                style={(/* !isImage1Visible || */ !hoverOnImageFrame1) ? { display: 'none' } : {}}
               >
                 <div className={workPanel}>
                   <div className={topPart}>
@@ -105,7 +105,7 @@ class Images1 extends Component {
                 </div>
               </div>
               <img className={`${image1} ${!mouseLeaveImageFrame1 ? fadein : ''}`}
-                style={(!isImage1Visible || hoverOnImageFrame1) ? { display: 'none' } : {}}
+                style={(/* !isImage1Visible || */ hoverOnImageFrame1) ? { display: 'none' } : {}}
                 src="/images/image-2.2.jpg"
                 alt="Food Sharing App - Leftlovers"
               />
@@ -119,7 +119,7 @@ class Images1 extends Component {
               onMouseLeave={this.onMouseLeaveImageFrame2}
             >
               <div className={image2}
-                style={(!isImage2Visible || !hoverOnImageFrame2) ? { display: 'none' } : {}}
+                style={(/* !isImage2Visible || */ !hoverOnImageFrame2) ? { display: 'none' } : {}}
               >
                 <div className={workPanel}>
                   <div className={topPart}>
@@ -133,7 +133,7 @@ class Images1 extends Component {
                 </div>
               </div>
               <img className={`${image2} ${!mouseLeaveImageFrame2 ? fadein : ''}`}
-                style={(!isImage2Visible || hoverOnImageFrame2) ? { display: 'none' } : {}}
+                style={(/* !isImage2Visible || */ hoverOnImageFrame2) ? { display: 'none' } : {}}
                 src="/images/image-2.1.jpg"
                 alt="Education Platform"
               />
