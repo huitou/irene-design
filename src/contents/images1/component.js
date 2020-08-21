@@ -109,6 +109,20 @@ class Images1 extends Component {
                 src="/images/image-2.2.jpg"
                 alt="Food Sharing App - Leftlovers"
               />
+              <div className={image1}
+                style={(/* !isImage1Visible || */ hoverOnImageFrame1) ? { display: 'none' } : {}}
+              >
+                <div className={workPanel}>
+                  <div className={topPart}>
+                    <div className={type}>GV Design Sprint</div>
+                    <div className={name}>Skincare Quiz</div>
+                    {/* <div className={description}>A quiz that makes finding the right products for your skin’s needs easy (and puppy-licious).</div> */}
+                  </div>
+                  <div className={bottomPart}>
+                    {/* <a className={link} href="/work-1">View the case study</a> */}
+                  </div>
+                </div>
+              </div>
             </div>
           </VisibilitySensor>
         </div>
@@ -137,6 +151,20 @@ class Images1 extends Component {
                 src="/images/image-2.1.jpg"
                 alt="Education Platform"
               />
+              <div className={image2}
+                style={(/* !isImage2Visible || */ hoverOnImageFrame2) ? { display: 'none' } : {}}
+              >
+                <div className={workPanel}>
+                  <div className={topPart}>
+                    <div className={type}>Free to Paid Conversion</div>
+                    <div className={name}>VIPrivé</div>
+                    {/* <div className={description}>A members-only luxury digital destination for Farfetch’s customers.</div> */}
+                  </div>
+                  <div className={bottomPart}>
+                    {/* <a className={link} href="/work-2">View the case study</a> */}
+                  </div>
+                </div>
+              </div>
             </div>
           </VisibilitySensor>
         </div>

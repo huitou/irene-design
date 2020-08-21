@@ -109,6 +109,20 @@ class Images2 extends Component {
                 src="/images/image-1.2.jpg"
                 alt="Music Stream Platform"
               />
+              <div className={image1}
+                style={(/* !isImage1Visible || */ hoverOnImageFrame1) ? { display: 'none' } : {}}
+              >
+                <div className={workPanel}>
+                  <div className={topPart}>
+                    <div className={type}>Mobile App Redesign</div>
+                    <div className={name}>KidsClub</div>
+                    {/* <div className={description}>The reimagining of a mobile app designed to encourage your little ones to live a healthier lifestyle.</div> */}
+                  </div>
+                  <div className={bottomPart}>
+                    {/* <a className={link} href="/work-3">View the case study</a> */}
+                  </div>
+                </div>
+              </div>
             </div>
           </VisibilitySensor>
         </div>
@@ -137,6 +151,20 @@ class Images2 extends Component {
                 src="/images/image-2.2.jpg"
                 alt="eCommerce Website"
               />
+              <div className={image2}
+                style={(/* !isImage2Visible || */ hoverOnImageFrame2) ? {} : {}}
+              >
+                <div className={workPanel}>
+                  <div className={topPart}>
+                    <div className={type}></div>
+                    {/* <div className={name}>New Projects Coming Up Soon!</div> */}
+                    <div className={description}></div>
+                  </div>
+                  <div className={bottomPart}>
+                    {/* <a className={link} href="/work-4"></a> */}
+                    </div>
+                </div>
+              </div>
             </div>
           </VisibilitySensor>
         </div>
