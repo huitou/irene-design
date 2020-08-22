@@ -94,7 +94,7 @@ class Images2 extends Component {
             >
               <img className={image1}
                 src="/images/image-1.2.jpg"
-                alt="Music Stream Platform"
+                alt="KidsClub"
               />
               <div className={image1}>
                 <div className={workPanel}>
@@ -147,8 +147,8 @@ class Images2 extends Component {
               </div>
               <img className={`${image2} ${!mouseLeaveImageFrame2 ? fadeinOpacity : ''}`}
                 style={(/* !isImage2Visible || */ hoverOnImageFrame2) ? { display: 'none' } : { display: 'none' }}
-                src="/images/image-2.2.jpg"
-                alt="eCommerce Website"
+                src="/images/image-1.1.png"
+                alt="Leftlovers"
               />
               <div className={image2}
                 style={(/* !isImage2Visible || */ hoverOnImageFrame2) ? {} : {}}
