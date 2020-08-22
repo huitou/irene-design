@@ -14,13 +14,13 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route path="/work-1">
+          <Route path="/skincare-quiz-case-study">
             <Work4Page />
           </Route>
-          <Route path="/work-2">
+          <Route path="/viprive-case-study">
             <Work3Page />
           </Route>
-          <Route path="/work-3">
+          <Route path="/kidsclub-case-study">
             <Work2Page />
           </Route>
           <Route path="/work-4">

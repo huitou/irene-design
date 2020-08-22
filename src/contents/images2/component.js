@@ -118,7 +118,7 @@ class Images2 extends Component {
                     <div className={`${description} ${fadeinOpacity}`}>The reimagining of a mobile app designed to encourage your little ones to live a healthier lifestyle.</div>
                   </div>
                   <div className={bottomPart}>
-                    <a className={`${link} ${fadeinOpacity}`} href="/work-3">View the case study</a>
+                    <a className={`${link} ${fadeinOpacity}`} href="kidsclub-case-study">View the case study</a>
                   </div>
                 </div>
               </div>
