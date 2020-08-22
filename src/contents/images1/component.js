@@ -94,7 +94,7 @@ class Images1 extends Component {
             >
               <img className={image1}
                 src="/images/image-2.2.jpg"
-                alt="Food Sharing App - Leftlovers"
+                alt="Skincare Quiz"
               />
               <div className={image1}>
                 <div className={workPanel}>
@@ -133,7 +133,7 @@ class Images1 extends Component {
             >
               <img className={image2}
                 src="/images/image-2.1.jpg"
-                alt="Education Platform"
+                alt="VIPrivé"
               />
               <div className={image2}>
                 <div className={workPanel}>
