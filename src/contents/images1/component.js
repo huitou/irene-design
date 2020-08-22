@@ -118,7 +118,7 @@ class Images1 extends Component {
                     <div className={`${description} ${fadeinOpacity}`}>A quiz that makes finding the right products for your skin’s needs easy (and puppy-licious).</div>
                   </div>
                   <div className={bottomPart}>
-                    <a className={`${link} ${fadeinOpacity}`} href="/work-1">View the case study</a>
+                    <a className={`${link} ${fadeinOpacity}`} href="/skincare-quiz-case-study">View the case study</a>
                   </div>
                 </div>
               </div>
@@ -157,7 +157,7 @@ class Images1 extends Component {
                     <div className={`${description} ${fadeinOpacity}`}>A members-only luxury digital destination for Farfetch’s customers.</div>
                   </div>
                   <div className={bottomPart}>
-                    <a className={`${link} ${fadeinOpacity}`} href="/work-2">View the case study</a>
+                    <a className={`${link} ${fadeinOpacity}`} href="/viprive-case-study">View the case study</a>
                   </div>
                 </div>
               </div>
