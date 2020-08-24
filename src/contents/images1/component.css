@@ -129,7 +129,6 @@
 
 .description {
     flex-grow: 4;
-    height: 120px;
     margin-top: 6.1%;
     width: 75%;
     font-size: 29px;
@@ -138,11 +137,10 @@
     line-height: 38px;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (max-width: 1600px) and (min-width: 769px) {
     .description {
-        height: 10vw;
-        width: 85%;
-        font-size: 2.1vw;
+        height: 7.5vw;
+        font-size: 1.8vw;
         line-height: 2.8vw;
     }
 }
@@ -151,8 +149,8 @@
     .description {
         height: auto;
         width: 85%;
-        font-size: 3.1vw;
-        line-height: 4.2vw;
+        font-size: 3.4vw;
+        line-height: normal;
     }
 }
 
