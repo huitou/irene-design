@@ -138,17 +138,21 @@
     line-height: 38px;
 }
 
-@media only screen and (max-width: 411px) {
-    .type {
-        margin-bottom: 3px;
+@media only screen and (min-width: 769px) {
+    .description {
+        height: 10vw;
+        width: 85%;
+        font-size: 2.1vw;
+        line-height: 2.8vw;
     }
+}
 
+@media only screen and (max-width: 768px) {
     .description {
         height: auto;
-        margin-top: 2%;
         width: 85%;
-        font-size: 14px;
-        line-height: normal;
+        font-size: 3.1vw;
+        line-height: 4.2vw;
     }
 }
 
