@@ -139,6 +139,21 @@
     color: rgba(255, 255, 255, .75);
     line-height: 38px;
 }
+
+@media only screen and (max-width: 411px) {
+    .type {
+        margin-bottom: 3px;
+    }
+
+    .description {
+        height: auto;
+        margin-top: 2%;
+        width: 85%;
+        font-size: 14px;
+        line-height: normal;
+    }
+}
+
 .link {
     font-size: 18px;
     font-weight: 400;
