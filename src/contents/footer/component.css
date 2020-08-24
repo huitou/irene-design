@@ -5,7 +5,7 @@
 }
 
 .contactFrame {
-    padding: 80px 7%;
+    padding: 80px 0 80px 7%;
 }
 
 .contact {
@@ -18,7 +18,7 @@
 }
 
 .socialFrame {
-    padding: 80px 7%;
+    padding: 80px 7% 80px 0;
 }
 
 .social {
@@ -29,4 +29,10 @@
 .icon {
     padding: 0 10px;
     width: 20px;
+}
+
+@media only screen and (max-width: 360px) {
+    .icon {
+        padding: 0 5px;
+    }
 }
