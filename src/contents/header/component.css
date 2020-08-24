@@ -7,7 +7,7 @@
 
 .logoFrame {
     width: 50%;
-    padding: 90px 7% 0;
+    padding: 5.625vw 7% 0;
 }
 
 .logo {
@@ -17,23 +17,13 @@
 
 .menuFrame {
     width: 50%;
-    padding: 90px 7% 0;
+    padding: 5.625vw 7% 0;
 }
 
 .menu {
     padding: 0px;
     display: flex;
     justify-content: flex-end;
-}
-
-@media only screen and (max-width: 411px) {
-    .logoFrame {
-        padding: 40px 7% 0;
-    }
-
-    .menuFrame {
-        padding: 40px 7% 0;
-    }
 }
 
 .menuItem {
