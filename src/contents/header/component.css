@@ -26,6 +26,16 @@
     justify-content: flex-end;
 }
 
+@media only screen and (max-width: 1600px) {
+    .logoFrame {
+        padding: 5.625vw 7% 0;
+    }
+
+    .menuFrame {
+        padding: 5.625vw 7% 0;
+    }
+}
+
 .menuItem {
     font-family: 'Crimson Text', serif;
     font-size: 20px;
