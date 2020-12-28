@@ -1,30 +1,28 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import PageLayout from '../../layout/page';
 import MainBodyLayout from '../../layout/bodys/main';
 import Header from '../../contents/header';
-import Title from '../../contents/title';
-import Images1 from '../../contents/images1';
-import Images2 from '../../contents/images2';
-import Footer from '../../contents/footer';
+import StringWithImage from '../../contents/string-with-image';
 
 const bodyRender = () => (
   <MainBodyLayout
-    titleRender={() => <Title />}
-    area1Render={() => <Images1 />}
-    area2Render={() => <Images2 />}
+    area1Render={() => <StringWithImage />}
+    area2Render={() => <StringWithImage />}
+    area3Render={() => <StringWithImage />}
   />
 );
 
 class MainPage extends Component {
   render() {
     return (
-      <PageLayout
-        activePage="WORK"
-        headerRender={() => (<Header theme="LIGHT" activePage="WORK" />)}
-        // bodyRender={bodyRender}
-        // footerRender={() => (<Footer />)}
-      />
+      <Fragment>
+        <PageLayout
+          activePage="WORK"
+          headerRender={() => (<Header theme="LIGHT" activePage="WORK" />)}
+          bodyRender={bodyRender}
+        />
+      </Fragment>
     );
   }
 }
