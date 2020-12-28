@@ -20,9 +20,10 @@ class MainPage extends Component {
   render() {
     return (
       <PageLayout
-        headerRender={() => (<Header />)}
-        bodyRender={bodyRender}
-        footerRender={() => (<Footer />)}
+        activePage="WORK"
+        headerRender={() => (<Header theme="LIGHT" activePage="WORK" />)}
+        // bodyRender={bodyRender}
+        // footerRender={() => (<Footer />)}
       />
     );
   }

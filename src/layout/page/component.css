@@ -9,6 +9,15 @@
     max-width: 1600px;
     background-color: #ffffff;
 }
+.work {
+    background-color: #d8d0e5;
+}
+.about {
+    background-color: #df6439;
+}
+.contact {
+    background-color: #ecd5c9;
+}
 
 .header {
     min-height: 100px;
