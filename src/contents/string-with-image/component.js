@@ -59,26 +59,24 @@ class StringWithImage extends Component {
                     <div className={imagePlaceholder}
                       style={{ width: `${content.imageSmall.width}px` }}
                     >
-                      {hoverOn
-                        ?<img className={imageLarge}
-                          style={{
-                            width: `${content.imageLarge.width}px`,
-                            left: `${ - content.imageLarge.width / 2 + content.imageSmall.width / 2}px`,
-                            bottom: `${ - content.imageLarge.height / 2 + 80 / 2}px`,
-                          }}
-                          src={content.imageLarge.src}
-                          alt={content.imageLarge.alt}
-                        />
-                        : <img className={imageSmall}
-                          style={{
-                            width: `${content.imageSmall.width}px`,
-                            left: 0,
-                            bottom: `${ - content.imageSmall.height / 2 + 80 / 2}px`,
-                          }}
-                          src={content.imageSmall.src}
-                          alt={content.imageSmall.alt}
-                        />
-                      }
+                      <img className={`${imageLarge} ${hoverOn ? '' : hidden}`}
+                        style={{
+                          width: `${content.imageLarge.width}px`,
+                          left: `${ - content.imageLarge.width / 2 + content.imageSmall.width / 2}px`,
+                          bottom: `${ - content.imageLarge.height / 2 + 80 / 2}px`,
+                        }}
+                        src={content.imageLarge.src}
+                        alt={content.imageLarge.alt}
+                      />
+                      <img className={`${imageSmall} ${hoverOn ? hidden : ''}`}
+                        style={{
+                          width: `${content.imageSmall.width}px`,
+                          left: 0,
+                          bottom: `${ - content.imageSmall.height / 2 + 80 / 2}px`,
+                        }}
+                        src={content.imageSmall.src}
+                        alt={content.imageSmall.alt}
+                      />
                       {/* <img className={imageLarge}
                         style={hoverOn
                           ? {
