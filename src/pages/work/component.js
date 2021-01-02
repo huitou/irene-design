@@ -71,6 +71,7 @@ class MainPage extends Component {
           activePage="WORK"
           headerRender={() => (<Header theme="LIGHT" activePage="WORK" />)}
           bodyRender={bodyRender}
+          footerRender={() => {}}
         />
       </Fragment>
     );

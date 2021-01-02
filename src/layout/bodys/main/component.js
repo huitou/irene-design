@@ -1,20 +1,18 @@
 import React, { Component, Fragment } from 'react';
 import { func } from 'prop-types';
 
-import { area1, area2, area3, interval } from './component.css';
+import { area1, area2, area3 } from './component.css';
 
 class MainBodyLayout extends Component {
   render() {
     const { area1Render, area2Render, area3Render } = this.props;
 
     return (
-      <Fragment>
+      <div>
         <div className={area1}>{area1Render()}</div>
-        <div className={interval}/>
         <div className={area2}>{area2Render()}</div>
-        <div className={interval}/>
         <div className={area3}>{area3Render()}</div>
-      </Fragment>
+      </div>
     );
   }
 }

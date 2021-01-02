@@ -6,11 +6,11 @@
 
 .page {
     width: 100%;
-    max-width: 1600px;
     background-color: #ffffff;
 }
 .work {
     background-color: #d8d0e5;
+    height: 100vh;
 }
 .about {
     background-color: #df6439;
