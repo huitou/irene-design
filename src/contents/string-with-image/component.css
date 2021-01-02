@@ -5,6 +5,17 @@
     justify-content: center;
 }
 
+.stringWithImageFrame {
+    padding: 60px 0;
+}
+
+.stringWithImageLayout {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .popped {
     z-index: 20;
     color: white;
@@ -18,8 +29,17 @@
 }
 
 .titleText {
-    padding: 60px 0;
     font-size: 42px;
+    line-height: 80px;
+}
+
+.smallTitleTextBox {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.smallTitleText {
+    font-size: 20px;
 }
 
 .imageSmall {

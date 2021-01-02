@@ -1,10 +1,15 @@
 import React, { Component, Fragment } from 'react';
-// import VisibilitySensor from 'react-visibility-sensor';
+import { withRouter } from 'react-router-dom';
 
 import {
   stringWithImageArea,
+  stringWithImageFrame,
+  stringWithImageBox,
+  stringWithImageLayout,
   popped,
   titleText,
+  smallTitleTextBox,
+  smallTitleText,
   imagePlaceholder,
   imageSmall,
   overlay,
@@ -33,25 +38,43 @@ class StringWithImage extends Component {
 
   render() {
     const { hoverOn } = this.state;
+    const { history, path } = this.props
 
     return (
       <Fragment>
         <div className={`${overlay} ${hoverOn ? '' : hidden}`} />
         <div className={stringWithImageArea}>
-          <span className={`${titleText} ${hoverOn ? popped : ''}`} onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut}>
-            1st substring, bla bla ...
-            <div className={imagePlaceholder}>
-              <img className={imageSmall}
-                src="/images/image-1.2.jpg"
-                alt="KidsClub"
-              />
+          <div className={`${stringWithImageFrame} ${hoverOn ? popped : ''}`}>
+            <div className={stringWithImageBox}
+              onMouseOver={this.onMouseOver}
+              onMouseOut={this.onMouseOut}
+              onClick={() => history.push(path)}
+            >
+              <div className={stringWithImageLayout}>
+                <div>
+                  <span className={titleText}>The Skincare</span>
+                  <span>
+                    <div className={imagePlaceholder}>
+                      <img className={imageSmall}
+                        src="/images/image-1.2.jpg"
+                        alt="KidsClub"
+                      />
+                    </div>
+                  </span>
+                  <span className={titleText}>Quiz  </span>
+                  <span>
+                    <div className={smallTitleTextBox}>
+                      <span className={smallTitleText}>CUROLOGY</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
             </div>
-            2nd substring, bla bla ....
-          </span>
+          </div>
         </div>
       </Fragment>
     );
   }
 }
 
-export default StringWithImage;
+export default withRouter(StringWithImage);

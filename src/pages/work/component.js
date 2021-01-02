@@ -7,9 +7,9 @@ import StringWithImage from '../../contents/string-with-image';
 
 const bodyRender = () => (
   <MainBodyLayout
-    area1Render={() => <StringWithImage />}
-    area2Render={() => <StringWithImage />}
-    area3Render={() => <StringWithImage />}
+    area1Render={() => <StringWithImage path={'/skincare-quiz-case-study'} />}
+    area2Render={() => <StringWithImage path={'/viprive-case-study'} />}
+    area3Render={() => <StringWithImage path={'/kidsclub-case-study'} />}
   />
 );
 
