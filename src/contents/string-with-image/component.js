@@ -38,7 +38,7 @@ class StringWithImage extends Component {
 
   render() {
     const { hoverOn } = this.state;
-    const { history, path } = this.props
+    const { history, content, path } = this.props
 
     return (
       <Fragment>
@@ -52,19 +52,22 @@ class StringWithImage extends Component {
             >
               <div className={stringWithImageLayout}>
                 <div>
-                  <span className={titleText}>The Skincare</span>
+                  <span className={titleText}>{content.text1}</span>
                   <span>
-                    <div className={imagePlaceholder}>
+                    <div className={imagePlaceholder}
+                      style={{ width: content.imageSmall.width }}
+                    >
                       <img className={imageSmall}
-                        src="/images/image-1.2.jpg"
-                        alt="KidsClub"
+                        style={{ width: content.imageSmall.width }}
+                        src={content.imageSmall.src}
+                        alt={content.imageSmall.alt}
                       />
                     </div>
                   </span>
-                  <span className={titleText}>Quiz  </span>
+                  <span className={titleText}>{`${content.text2}  `}</span>
                   <span>
                     <div className={smallTitleTextBox}>
-                      <span className={smallTitleText}>CUROLOGY</span>
+                      <span className={smallTitleText}>{content.textSmall}</span>
                     </div>
                   </span>
                 </div>

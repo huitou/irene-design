@@ -25,12 +25,18 @@
     position: relative;
     display: inline-block;
     margin: 20px;
-    width: 80px;
+}
+
+.imageSmall {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
 }
 
 .titleText {
-    font-size: 42px;
     line-height: 80px;
+    font-size: 100px;
+    color: #DF6439;
 }
 
 .smallTitleTextBox {
@@ -40,14 +46,7 @@
 
 .smallTitleText {
     font-size: 20px;
-}
-
-.imageSmall {
-    position: absolute;
-    bottom: -44px;
-    left: 0;
-    height: 80px;
-    width: 80px;
+    color: #DF6439;
 }
 
 .overlay {
