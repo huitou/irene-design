@@ -13,11 +13,14 @@ const contents = [
     imageSmall: {
       src: '/images/quiz/non-hover.png',
       alt: 'Skin care quiz',
-      width: '80px',
+      width: 80,
+      height: 124.02,
     },
     imageLarge: {
       src: '/images/quiz/hover.png',
       alt: 'Skin care quiz',
+      width: 300,
+      height: 465.06,
     },
   },
   {
@@ -27,11 +30,14 @@ const contents = [
     imageSmall: {
       src: '/images/tracker/non-hover.png',
       alt: 'Period Tracker',
-      width: '124px',
+      width: 124,
+      height: 81,
     },
     imageLarge: {
       src: '/images/tracker/hover.png',
       alt: 'Period Tracker',
+      width: 450,
+      height: 450,
     },
   },
   {
@@ -41,11 +47,14 @@ const contents = [
     imageSmall: {
       src: '/images/dashboard/non-hover.png',
       alt: 'Fertility Dashboard',
-      width: '124px',
+      width: 124,
+      height: 81,
     },
     imageLarge: {
       src: '/images/dashboard/hover.png',
       alt: 'Fertility Dashboard',
+      width: 450,
+      height: 450,
     },
   },
 ];

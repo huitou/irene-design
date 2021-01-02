@@ -7,6 +7,7 @@
 
 .stringWithImageFrame {
     padding: 60px 0;
+    color: #DF6439;
 }
 
 .stringWithImageLayout {
@@ -24,19 +25,30 @@
 .imagePlaceholder {
     position: relative;
     display: inline-block;
-    margin: 20px;
+    height: 80px;
+    margin: 0 20px;
 }
 
 .imageSmall {
     position: absolute;
-    bottom: -20px;
+    left: 0;
+    bottom: 0;
+}
+
+.imageLarge {
+    position: absolute;
+    bottom: 0;
     left: 0;
 }
 
 .titleText {
     line-height: 80px;
     font-size: 100px;
-    color: #DF6439;
+    position: relative;
+}
+
+.textPopped {
+    z-index: 30;
 }
 
 .smallTitleTextBox {
@@ -46,7 +58,6 @@
 
 .smallTitleText {
     font-size: 20px;
-    color: #DF6439;
 }
 
 .overlay {

@@ -1,14 +1,14 @@
 import React, { Component, Fragment } from 'react';
 import { func } from 'prop-types';
 
-import { area1, area2, area3 } from './component.css';
+import { mainBodyFrame, area1, area2, area3 } from './component.css';
 
 class MainBodyLayout extends Component {
   render() {
     const { area1Render, area2Render, area3Render } = this.props;
 
     return (
-      <div>
+      <div className={mainBodyFrame}>
         <div className={area1}>{area1Render()}</div>
         <div className={area2}>{area2Render()}</div>
         <div className={area3}>{area3Render()}</div>

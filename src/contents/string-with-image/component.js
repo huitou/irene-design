@@ -8,10 +8,12 @@ import {
   stringWithImageLayout,
   popped,
   titleText,
+  textPopped,
   smallTitleTextBox,
   smallTitleText,
   imagePlaceholder,
   imageSmall,
+  imageLarge,
   overlay,
   hidden,
 } from './component.css';
@@ -52,19 +54,50 @@ class StringWithImage extends Component {
             >
               <div className={stringWithImageLayout}>
                 <div>
-                  <span className={titleText}>{content.text1}</span>
+                  <span className={`${titleText} ${hoverOn ? textPopped : ''}`}>{content.text1}</span>
                   <span>
                     <div className={imagePlaceholder}
-                      style={{ width: content.imageSmall.width }}
+                      style={{ width: `${content.imageSmall.width}px` }}
                     >
-                      <img className={imageSmall}
-                        style={{ width: content.imageSmall.width }}
-                        src={content.imageSmall.src}
-                        alt={content.imageSmall.alt}
-                      />
+                      {hoverOn
+                        ?<img className={imageLarge}
+                          style={{
+                            width: `${content.imageLarge.width}px`,
+                            left: `${ - content.imageLarge.width / 2 + content.imageSmall.width / 2}px`,
+                            bottom: `${ - content.imageLarge.height / 2 + 80 / 2}px`,
+                          }}
+                          src={content.imageLarge.src}
+                          alt={content.imageLarge.alt}
+                        />
+                        : <img className={imageSmall}
+                          style={{
+                            width: `${content.imageSmall.width}px`,
+                            left: 0,
+                            bottom: `${ - content.imageSmall.height / 2 + 80 / 2}px`,
+                          }}
+                          src={content.imageSmall.src}
+                          alt={content.imageSmall.alt}
+                        />
+                      }
+                      {/* <img className={imageLarge}
+                        style={hoverOn
+                          ? {
+                            width: `${content.imageLarge.width}px`,
+                            left: `${ - content.imageLarge.width / 2 + content.imageSmall.width / 2}px`,
+                            bottom: `${ - content.imageLarge.height / 2 + 80 / 2}px`,
+                          }
+                          : {
+                            width: `${content.imageSmall.width}px`,
+                            left: 0,
+                            bottom: `${ - content.imageSmall.height / 2 + 80 / 2}px`,
+                          }
+                        }
+                        src={content.imageLarge.src}
+                        alt={content.imageLarge.alt}
+                      /> */}
                     </div>
                   </span>
-                  <span className={titleText}>{`${content.text2}  `}</span>
+                  <span className={`${titleText} ${hoverOn ? textPopped : ''}`}>{`${content.text2}  `}</span>
                   <span>
                     <div className={smallTitleTextBox}>
                       <span className={smallTitleText}>{content.textSmall}</span>
