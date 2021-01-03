@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import MainPage from './pages/main';
+import MainPage from './pages/work';
+import AboutPage from './pages/about';
+import ContactPage from './pages/contact';
 import Work1Page from './pages/work-1';
 import Work2Page from './pages/work-2';
 import Work3Page from './pages/work-3';
@@ -25,6 +27,12 @@ class App extends Component {
           </Route>
           <Route path="/work-4">
             <Work1Page />
+          </Route>
+          <Route path="/about">
+            <AboutPage />
+          </Route>
+          <Route path="/contact">
+            <ContactPage />
           </Route>
           <Route path="/">
             <MainPage />

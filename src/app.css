@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
+@font-face {
+    font-family: 'Canela Regular';
+    src: url('Canela-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Canela Medium';
+    src: url('Canela-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GT America Extended Medium';
+    src: url('GT America Extended Medium.ttf') format('truetype');
+}
+
 body {
     font-family: 'Karla', sans-serif;
     background-color: #e5e6ea;

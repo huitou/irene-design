@@ -1,5 +1,5 @@
-.title {
-    padding: 0px;
+.mainBodyFrame {
+    padding: 0;
 }
 
 .area1 {
@@ -7,5 +7,9 @@
 }
 
 .area2 {
+    padding: 0px;
+}
+
+.area3 {
     padding: 0px;
 }

@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
 import { func } from 'prop-types';
 
-import { view, page, header, body, footer } from './component.css';
+import { view, page, header, body, footer, work, about, contact } from './component.css';
+
+const className = {
+  WORK: work,
+  ABOUT: about,
+  CONTACT: contact,
+};
 
 class PageLayout extends Component {
 
   render() {
-    const { headerRender, bodyRender, footerRender } = this.props;
+    const { headerRender, bodyRender, footerRender, activePage } = this.props;
 
     return (
       <div className={view}>
-        <div className={page}>
+        <div className={`${page} ${className[activePage]}`}>
           <div className={header}>{headerRender()}</div>
           <div className={body}>{bodyRender()}</div>
           <div className={footer}>{footerRender()}</div>

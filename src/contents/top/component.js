@@ -21,9 +21,7 @@ class TopContent extends Component {
     return (
       <div className={topContentArea} style={imageSource.src ? backgroundStyle : {}}>
         <div className={topContentFrame}>
-          <Header activePage="WORK_ITEM_1"
-            theme="DARK"
-          />
+          <Header activePage="WORK" theme="DARK" />
           <WorkName work={work} company={company} />
           <WorkType type={type} />
         </div>
