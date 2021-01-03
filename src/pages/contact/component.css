@@ -1,0 +1,17 @@
+.contactTitle {
+    font-family: GT America Extended Medium;
+    font-size: 18px;
+    color: #312F55;
+    line-height: 80px;
+}
+
+.contactText {
+    font-family: Canela Regular;
+    font-size: 50px;
+    color: #312F55;
+    line-height: 80px;
+}
+
+.contactLink {
+    text-decoration: none;
+}

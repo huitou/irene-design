@@ -106,6 +106,10 @@ const bodyRender = () => (
 );
 
 class AboutPage extends Component {
+  componentDidMount() {
+    document.body.style.backgroundColor = '#df6439';
+  }
+
   render() {
     return (
       <PageLayout

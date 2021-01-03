@@ -73,6 +73,10 @@ const bodyRender = () => (
 );
 
 class MainPage extends Component {
+  componentDidMount() {
+    document.body.style.backgroundColor = '#d8d0e5';
+  }
+
   render() {
     return (
       <Fragment>
