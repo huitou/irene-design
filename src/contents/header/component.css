@@ -7,17 +7,16 @@
 
 .logoFrame {
     width: 50%;
-    padding: 90px 7% 0;
+    padding: 90px 7%;
 }
 
 .logo {
-    width: 200px;
-    height: 33px;
+    width: 272px;
 }
 
 .menuFrame {
     width: 50%;
-    padding: 90px 7% 0;
+    padding: 90px 7%;
 }
 
 .menu {
@@ -28,11 +27,11 @@
 
 @media only screen and (max-width: 1600px) {
     .logoFrame {
-        padding: 5.625vw 7% 0;
+        padding: 5.625vw 7%;
     }
 
     .menuFrame {
-        padding: 5.625vw 7% 0;
+        padding: 5.625vw 7%;
     }
 }
 
@@ -58,5 +57,9 @@
 }
 
 .dark {
+    color: #312F55;
+}
+
+.light {
     color: #ffffff;
 }
