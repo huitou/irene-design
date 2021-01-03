@@ -1,0 +1,30 @@
+.area {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+.frame {
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+    height: 460px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}

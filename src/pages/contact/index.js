@@ -1,3 +1,3 @@
-import MainPage from './component';
+import ContactPage from './component';
 
-export default MainPage;
+export default ContactPage;
