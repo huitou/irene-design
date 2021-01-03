@@ -1,0 +1,40 @@
+.stringWithImageArea {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.stringWithImageFrame {
+    padding: 60px 0;
+    width: 60%;
+    min-width: 600px;
+    color: white;
+}
+
+.stringWithImageLayout {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.imagePlaceholder {
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    margin: 0 20px;
+}
+
+.contentImage {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.contentText {
+    line-height: 80px;
+    font-family: Canela Regular;
+    font-size: 50px;
+    position: relative;
+}
