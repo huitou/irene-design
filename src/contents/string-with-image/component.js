@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import { withRouter } from 'react-router-dom';
 
+import { getI } from '../../utils';
+
 import {
   stringWithImageArea,
   stringWithImageFrame,
@@ -17,6 +19,10 @@ import {
   overlay,
   hidden,
 } from './component.css';
+
+// TODO
+const placeholderHeights = [ 22, 30, 48, 60, 80 ];
+// ENDTODO
 
 class StringWithImage extends Component {
   constructor(props) {
@@ -40,7 +46,9 @@ class StringWithImage extends Component {
 
   render() {
     const { hoverOn } = this.state;
-    const { history, content, path } = this.props
+    const { history, content, path } = this.props;
+
+    const i = getI();
 
     return (
       <Fragment>
@@ -63,7 +71,7 @@ class StringWithImage extends Component {
                         style={{
                           width: `${content.imageLarge.width}px`,
                           left: `${ - content.imageLarge.width / 2 + content.imageSmall.width / 2}px`,
-                          bottom: `${ - content.imageLarge.height / 2 + 80 / 2}px`,
+                          bottom: `${ - content.imageLarge.height / 2 + placeholderHeights[i] / 2}px`,
                         }}
                         src={content.imageLarge.src}
                         alt={content.imageLarge.alt}
@@ -72,27 +80,11 @@ class StringWithImage extends Component {
                         style={{
                           width: `${content.imageSmall.width}px`,
                           left: 0,
-                          bottom: `${ - content.imageSmall.height / 2 + 80 / 2}px`,
+                          bottom: `${ - content.imageSmall.height / 2 + placeholderHeights[i] / 2}px`,
                         }}
                         src={content.imageSmall.src}
                         alt={content.imageSmall.alt}
                       />
-                      {/* <img className={imageLarge}
-                        style={hoverOn
-                          ? {
-                            width: `${content.imageLarge.width}px`,
-                            left: `${ - content.imageLarge.width / 2 + content.imageSmall.width / 2}px`,
-                            bottom: `${ - content.imageLarge.height / 2 + 80 / 2}px`,
-                          }
-                          : {
-                            width: `${content.imageSmall.width}px`,
-                            left: 0,
-                            bottom: `${ - content.imageSmall.height / 2 + 80 / 2}px`,
-                          }
-                        }
-                        src={content.imageLarge.src}
-                        alt={content.imageLarge.alt}
-                      /> */}
                     </div>
                   </span>
                   <span className={`${titleText} ${hoverOn ? textPopped : ''}`}>{`${content.text2}  `}</span>

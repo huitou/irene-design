@@ -6,7 +6,7 @@
 }
 
 .stringWithImageFrame {
-    padding: 60px 0;
+    padding: 40px 0;
     color: #DF6439;
 }
 
@@ -44,7 +44,7 @@
 .titleText {
     line-height: 80px;
     font-family: Canela Regular;
-    font-size: 100px;
+    font-size: 80px;
     position: relative;
 }
 
@@ -75,4 +75,83 @@
 
 .hidden {
     visibility: hidden;
+}
+
+@media only screen and (max-width: 1023px) {
+    .stringWithImageFrame {
+        padding: 20px 0;
+    }
+    .titleText {
+        line-height: 64px;
+        font-size: 64px;
+    }
+
+    .imagePlaceholder {
+        height: 64px;
+        margin: 0 18px;
+    }
+
+    .smallTitleText {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 839px) {
+    .stringWithImageFrame {
+        padding: 20px 0;
+    }
+
+    .titleText {
+        line-height: 46px;
+        font-size: 46px;
+    }
+
+    .imagePlaceholder {
+        height: 46px;
+        margin: 0 10px;
+    }
+
+    .smallTitleText {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .stringWithImageFrame {
+        padding: 20px 0;
+    }
+
+    .titleText {
+        line-height: 28px;
+        font-size: 28px;
+    }
+
+    .imagePlaceholder {
+        height: 50px;
+        margin: 0 5px;
+    }
+
+    .smallTitleText {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 413px) {
+    .stringWithImageFrame {
+        padding: 16px 0;
+    }
+
+    .titleText {
+        line-height: 24px;
+        font-size: 24px;
+    }
+
+    .imagePlaceholder {
+        height: 36px;
+        margin: 0 5px;
+    }
+
+    .smallTitleText {
+        font-size: 8px;
+    }
 }
