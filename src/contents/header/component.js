@@ -45,7 +45,7 @@ class Header extends Component {
             </div>
             <div className={menuItemRight}>
               <span className={`${menuItem} ${isThemeDark ? dark : ''}`}
-                onClick={() => window.open('/docs/cv.pdf', '_blank')}
+                onClick={() => /* TODO: change absolute url when domain management issue is resolved. */ window.open('https://www.irenelidiawang.com/docs/cv.pdf', '_blank')}
               >
                 CV
               </span>
